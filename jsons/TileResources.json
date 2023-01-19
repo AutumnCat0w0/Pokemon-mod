@@ -748,4 +748,10 @@
 	
 	},
 	
+	{
+		"name": "未知能源",
+		"resourceType": "Strategic",
+	
+	},
+	
 ]

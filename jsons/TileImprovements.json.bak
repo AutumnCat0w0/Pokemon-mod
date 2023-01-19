@@ -72,7 +72,7 @@
 		"name": "Plantation",
 		"turnsToBuild": 6,
 		"gold": 1,
-		"techRequired": "灌溉",
+		"techRequired": "Agriculture",
 		"uniques": ["[+1 Food] <after discovering [Fertilizer]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "P"
 	},
@@ -356,6 +356,8 @@
 		"turnsToBuild": 8,
 		"techRequired": "Agriculture",
 		"uniques": [
+		"[+100% Food] from [Farm] tiles"
+		"Consumes [1] [未知能源]",
 		"Tile provides yield without assigned population"//不需要人
 			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
 			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
@@ -374,6 +376,7 @@
 		"turnsToBuild": 8,
 		"techRequired": "Mining",
 		"uniques": [
+		"Consumes [1] [未知能源]",
 		"Tile provides yield without assigned population"//不需要人
 		"[+1 Production] <after discovering [Chemistry]>", 
 		"[+2 Production] <after discovering [Machinery]>",
@@ -396,8 +399,9 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 8,
 		"gold": 1,
-		"techRequired": "灌溉",
+		"techRequired": "Agriculture",
 		"uniques": [
+		"Consumes [1] [未知能源]",
 		"Tile provides yield without assigned population"//不需要人
 		"[+1 Food] <after discovering [Fertilizer]>",
 		"[+1 Food] <after discovering [Machinery]>",
@@ -426,6 +430,7 @@
 		"turnsToBuild": 8,
 		"techRequired": "Masonry",
 		"uniques": [
+		"Consumes [1] [未知能源]",
 		"Tile provides yield without assigned population"//不需要人
 		"[+1 Production] <after discovering [Chemistry]>",
 		"[+2 Production] <after discovering [Machinery]>",
@@ -446,6 +451,7 @@
 		"techRequired": "Animal Husbandry",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"uniques": [
+		"Consumes [1] [未知能源]",
 		"Tile provides yield without assigned population"//不需要人
 		"[+1 Food] <after discovering [Machinery]>",
 		"[+1 Production] <after discovering [Machinery]>",

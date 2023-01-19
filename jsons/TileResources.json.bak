@@ -698,12 +698,12 @@
 	{
 		"name": "心之鳞片",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["爱心鱼群"],
+		"terrainsCanBeFoundOn": ["Coast"],
 		"gold":4,
 		"improvement": "Fishing Boats",
 		"improvementStats": {"food": -1,"production": 1,"gold": 1},
 		"uniques": [
-		"Generated with weight [130] <in [爱心鱼群] tiles>",
+		"Generated with weight [130] <in [Coast] tiles>",
 		]
 	},
 	

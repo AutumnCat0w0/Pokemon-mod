@@ -1340,7 +1340,7 @@
 		"cost":10,
 		"uniques": [
 		"Unbuildable",//不可组建
-			"[6] free [龙神柱] units appear",
+			"[6] free [护城龙] units appear",
 			],
 	},
 	
@@ -1360,6 +1360,19 @@
 		"Must have an owned [Water] within [2] tiles",//周围2格需要有水
 		"Destroyed when the city is captured"],
 		"requiredTech": "Drama and Poetry"
+	},
+	
+	{
+		"name": "究极之门",
+		"uniqueTo": "以太基金会",//属于国家（如果不想专属可以不写这项）
+		"cost":100,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+		"Provides [3] [未知能源]",
+		"[1] free [Worker] units appear",
+		"Destroyed when the city is captured"],
+		"requiredTech": "聚落"
 	},
 	
 	
@@ -1694,7 +1707,7 @@
 	
 	
 	////未知图腾胜利
-	{
+	/*{
 		"name": "废墟探索",
 		"cost": 500,
 		"isNationalWonder": true,
@@ -1769,7 +1782,7 @@
 		"Only available <if [排列组合] is constructed>"
 		"[1] free [未知图腾 ！] units appear",
         ]
-	},
+	},*/
 
 
 ]
