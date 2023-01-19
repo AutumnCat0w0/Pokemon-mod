@@ -248,7 +248,7 @@
 		"[+30]% Strength for cities<before the [Medieval era]>"
 		"[+30]% Strength for cities<before the [Renaissance era]>"
 		"May buy [龙之开拓者] units for [500] [Faith] [in all cities] at an increasing price ([500])"
-		"May buy [龙神柱] units for [100] [Faith] [in all cities] at an increasing price ([150])"
+		"May buy [护城龙] units for [100] [Faith] [in all cities] at an increasing price ([150])"
 		"May buy [Sword] units with [Faith] for [3] times their normal Production cost"
 			],//文明特性具体效果
 			"cities": ["流星之里","流星瀑布",]//城市名，可无限写下去，中间逗号连接*
