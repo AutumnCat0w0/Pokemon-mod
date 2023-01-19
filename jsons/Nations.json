@@ -1,0 +1,660 @@
+[//最外侧套中括号,括号秉持成双成对原则
+    {
+		"name": "Spectator",
+		"outerColor": [255,255,255]
+//		"innerColor": [255,255,255]
+	},
+	
+	//Barbarian
+	{
+		"name": "Barbarians",
+		"outerColor": [0,0,0],
+		"innerColor": [182,0,0],
+		"uniques": ["Can only heal by pillaging"]
+	},
+	
+	{
+			"name": "关都联盟",
+			"leaderName": "Red",
+			"adjective": ["pokemon"],
+		"startBias": ["Mountain"],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "你好！很高兴见到你！欢迎来到精灵宝可梦的世界！我叫大木，大家都亲切地称我为宝可梦博士。在这个世界里，到处都生活着一种叫做宝可梦的生物！有些人会亲切地照顾它们，而有些人会指挥它们进行对战……至于我……作为一名博士，我正在研究它们。",//介绍1
+			"startIntroPart2": "而你，真新镇的red，你将与你的同伴一起，将要不断的战斗、收服，作为宝可梦训练师的修炼之旅还在继续，道路总会有分叉，时而迷路，时而走回原地，时而绕远路，尽管如此，旅行仍要继续，为了接近那还未曾实现的真实，加油吧，向着宝可梦大师的目标前进吧！",//介绍2
+			"declaringWar": "......！",//向玩家宣战
+			"attacked": "... ... ... ...！",//被玩家宣战
+			"defeated": "。。。",//被玩家打败时
+			"introduction": "......",//初见
+			"neutralHello": "......",//通常问候
+			"hateHello": "... ...",//战争时问候
+			"tradeRequest": "... ... ......",//向玩家申请交易时
+			"outerColor": [255, 32, 64],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueName": "宝界规矩",//文明特性名
+			"uniqueText": "众所周知，宝可梦的零花钱和经验来源都是敌人，去掠夺他们吧（bushi）。你每次与敌人作战，都会使文明学到更多，并且，你的同盟在你作战时能更快的帮助你。"
+			"uniques": [
+			"Earn [33]% of killed [Military] unit's [Cost] as [Gold]",//杀人拿一半产能的钱
+			"Earn [5]% of the damage done to [Military] units as [Science] <before the [Medieval era]>"//打人科技
+			"Earn [15]% of the damage done to [Military] units as [Culture] <before the [Medieval era]>"//打人文化
+			"Earn [10]% of the damage done to [Military] units as [Faith] <before the [Medieval era]>"//打人信仰
+			
+            "Militaristic City-States grant units [5] times as fast when you are at war with a common nation",//作战时同盟城邦送兵的爆兵速度翻倍率
+            "[+2 Production] from [Mountain] tiles [in this city]"
+			],//文明特性具体效果
+			"cities": ["真新镇","常磐市","尼比市","枯叶市","紫苑镇","玉虹市","黄金市","浅红市","红莲镇","一之岛","二之岛","三之岛","四之岛","五之岛","六之岛","七之岛"]//城市名，可无限写下去，中间逗号连接*
+	},//文明之间，{}与{}之间必须有逗号链接
+	{//里侧每一个文明都是一个大括号
+	 // 打星号为必须拥有的接口，其余根据喜好删除
+			"name": "火箭队",
+			"leaderName": "坂木",
+			"adjective": ["pokemon"],
+			"startBias": ["Desert"],//起始偏好
+			"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你，大地的坂木，只要站在地面上就是无敌的存在，为了自己的野心，为了自己的家人，你将要向世界展示自己的力量！",//介绍2
+			"declaringWar": "来吧，让我看看你的实力。",//向玩家宣战
+			"attacked": "哼，不知死活。",//被玩家宣战
+			"defeated": "你赢了……但这还没完。",//被玩家打败时
+			"introduction": "常磐，坂木。",//初见
+			"neutralHello": "有何贵干。",//通常问候
+			"hateHello": "滚吧。",//战争时问候
+			"tradeRequest": "我相信这对我们都有好处。",//向玩家申请交易时
+			"outerColor": [10, 132, 64],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueName": "大地的坂木",//文明特性名
+			"uniqueText": "掌握了大地的奥义，在大地之上会变得更强。"
+			"uniques": [
+			"Earn [33]% of killed [Military] unit's [Cost] as [Gold]",//杀人拿一半产能的钱
+			
+			
+			"[+10]% Strength <in [Land] tiles><when defending>",
+			"[+10]% Strength <in [Desert] tiles><when defending>",
+			"[+10]% Strength <in [Land] tiles>",
+			"[+5]% Strength <in [Desert] tiles>",
+			"[+1 Food] from [Desert] tiles without [Flood plains] [in capital]",
+			"[+1 Production] from [Desert] tiles without [Flood plains] [in this city]",
+			"[+1 Gold] from [Land] tiles without [Flood plains] [in this city]"
+			],//文明特性具体效果
+			"cities": ["常磐道馆","常磐市","玉虹市娱乐城","红莲市研究中心","火箭队基地","2号基地"]//城市名，可无限写下去，中间逗号连接*
+	},
+	
+	
+	
+	///////////第三世代////////
+	{
+			"name": "芳缘联盟",
+			"leaderName": "米可利",
+			"adjective": ["pokemon"],
+		"startBias": ["Coast"],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你，身为芳缘地区的新任冠军，描绘着美丽与智慧的水之王子，琉璃之民的传承者，也是全世界最顶尖的协调训练家米可利，现在，与你的同伴一起，将那华丽的水之幻影散布到全世界吧！",//介绍2
+			"declaringWar": "时而像春风般起舞，时而像闪电般突刺。让我们来一场这种迷人的对战吧！",//向玩家宣战
+			"attacked": "你和……你的宝可梦齐心协力，越过重重困难来到这里，让我见识见识你的强大吧！",//被玩家宣战
+			"defeated": "太奇迹了！优雅到让人嫉妒啊！！非常灿烂夺目！",//被玩家打败时
+            "introduction": "请容我正式介绍我自己。我是米可利，丰缘地区的冠军。",//初见
+            "neutralHello": "真高兴能见到你。",//通常问候
+            "hateHello": "谁能跳出最华丽的舞蹈呢！就在这里见证吧！",//战争时问候
+            "tradeRequest": "这可都是我们这的特产。",//向玩家申请交易时
+			"outerColor": [135, 206, 235],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "协调训练家的顶点，每一个海洋或海滨地块都会提供文化或快乐。组建水属性单位时提升速度。"
+			"uniqueName": "水幻琉璃",//文明特性名
+			"uniques": [
+			
+			
+			"Each city founded increases culture cost of policies [200]% less than normal"
+			"[+1 Culture] [in capital]",
+			"[+5 Production] [in capital]",
+			"[+1 Culture] [in all cities]",
+			"[+1 Food] from [Water] tiles [in capital]",
+			"[+1 Culture] from [Water] tiles [in capital]",
+			"[+1 Happiness] from [Ocean] tiles [in all cities]",
+			"[+1 Culture] from [Ocean] tiles [in all cities]",
+			"[+50]% Production when constructing [Water] units [in all cities]"
+			],//文明特性具体效果
+			"cities": ["彩悠市","琉璃市","绿岭市","水静市","茵郁市","紫堇市","凯那市","卡那兹市","橙华市"]
+			
+	},
+	
+	{
+			"name": "水舰队",
+			"leaderName": "水梧桐",
+			"adjective": ["pokemon"],
+		"startBias": ["Coast"],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你，身为水舰队老大的水梧桐，为了自己的理想，让海洋去统治世界吧！",//介绍2
+			"declaringWar": "为了实现我的梦想，你必须消失！",//向玩家宣战
+			"attacked": "呼呼呼，来吧！海洋不会畏惧任何挑战！",//被玩家宣战
+			"defeated": "……你真的是值得称赞，但这仅是落潮罢了，我总会回来的！",//被玩家打败时
+            "introduction": "我是水梧桐，平时以水舰队之名活动。",//初见
+            "neutralHello": "一大早就这么有精神啊，哇哈哈哈哈~",//通常问候
+            "hateHello": "生命诞生于海洋……通过增加海洋的面积，就能孕育出未来生命那无限的可能！而你，当了我的路！",//战争时问候
+            "tradeRequest": "我有一笔生意想和你谈谈！",//向玩家申请交易时
+			"outerColor": [0, 69, 107],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "你可以通过靛蓝色宝珠召唤盖欧卡。你的水上地块获得额外资源，但减少你在陆上获取的资源。你的单位可以船运与航海。"
+			"uniqueName": "巨浪潮流！",//文明特性名
+			"uniques": [
+			
+		    "May buy [靛蓝色宝珠] buildings with [Faith] for [1] times their normal Production cost"
+		    "Enables embarkation for land units <starting from the [Ancient era]>", //为陆地启用登船
+		    "Enables [All] units to enter ocean tiles <starting from the [Ancient era]>", //单位可下海
+		    "Normal vision when embarked <for [All] units>"//下海后视野正常
+		    "[+1 Food] from [Water] tiles [in all cities]",
+			"[+2 Production] from [Water] tiles [in all cities]",
+			"[+1 Faith] from [Water] tiles [in all cities]",
+			//"[+5 Gold] from [Water] tiles [in capital] <before the [Medieval era]>"
+			"[-1 Food] from [Land] tiles [in all cities]",
+			"[-1 Production] from [Land] tiles [in all cities]",
+			"[-5 Culture] from [Land] tiles [in all cities]",
+			"[-5 Gold] from [Land] tiles [in all cities]"
+			],//文明特性具体效果
+			"cities": ["水舰队号基地","水舰队二号基地","水舰队三号基地","水舰队四号基地",]
+			
+	},
+	
+	{
+			"name": "熔岩队",
+			"leaderName": "赤焰松",
+			"adjective": ["pokemon"],
+		//"startBias": ["Coast"],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你，身为熔岩队老大的赤焰松，为了自己的理想，让陆地去统治世界吧！",//介绍2
+			"declaringWar": "你妨碍了我的计划。",//向玩家宣战
+			"attacked": "我不会手下留情的。",//被玩家宣战
+			"defeated": "我有一个心愿……我要通过增加大地的面积，让人们和宝可梦得以发展！你我就此别过了。",//被玩家打败时
+            "introduction": "我叫赤焰松，是熔岩团的老大，致力于人类的发展与进化。",//初见
+            "neutralHello": "你好。",//通常问候
+            "hateHello": "我要让你知道，妨碍我赤焰松会是个怎样的下场！",//战争时问候
+            "tradeRequest": "来做个交易吧。",//向玩家申请交易时
+			"outerColor": [255, 0, 0],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "你可以通过朱红色宝珠召唤固拉多。你的陆地地块获得额外资源，但减少你在水上获取的资源，并且你的单位在。"
+			"uniqueName": "大地之子",//文明特性名
+			"uniques": [
+			
+			
+		    "May buy [朱红色宝珠] buildings with [Faith] for [1] times their normal Production cost"
+		    "Enables embarkation for land units <starting from the [Atomic era]>", //为陆地启用登船
+		    "Enables [All] units to enter ocean tiles <starting from the [Atomic era]>", //单位可下海
+		    "[-4 Food] from [Water] tiles [in all cities]",
+			"[-4 Production] from [Water] tiles [in all cities]",
+			"[-4 Faith] from [Water] tiles [in all cities]",
+			"[+1 Production] from [Hill] tiles [in all cities]",
+			"[+1 Faith] from [Hill] tiles [in capital]"
+			//"[+2 Food] from [Hill] tiles [in capital]"
+			],//文明特性具体效果
+			"cities": ["熔岩队号基地","熔岩队二号基地","熔岩队三号基地","熔岩队四号基地",]
+			
+	},
+	
+	{
+			"name": "流星之民",
+			"leaderName": "希嘉娜",
+			"adjective": ["pokemon"],
+		"startBias": ["Mountain"],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你，流星之里的希嘉娜，很抱歉我还没想好，所以也先放着吧",//介绍2
+			"declaringWar": "空",//向玩家宣战
+			"attacked": "空",//被玩家宣战
+			"defeated": "空",//被玩家打败时
+			"introduction": "我是希嘉娜，流浪的宝可梦训练家，我爱遥想宇宙......",//初见
+			"neutralHello": "什~么都不做，就这样放空一天，偶尔这样也蛮不错的吧。",//通常问候
+			"hateHello": "空",//战争时问候
+			"tradeRequest": "空",//向玩家申请交易时
+			"outerColor": [155, 32, 64],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueName": "守护之愿",//文明特性名
+			"uniqueText": "你可以获得拥有龙神力量的龙之神柱的庇护。你的陆地地块产出大幅度减少。若你击杀了单位，能获得不同程度的资源。"
+			"uniques": [
+			"Earn [100]% of killed [Military] unit's [Cost] as [Gold]",//杀人拿一半产能的钱
+			"Earn [40]% of killed [Military] unit's [Cost] as [Faith]",//杀人拿一半产能的钱
+			"Earn [10]% of killed [Military] unit's [Cost] as [Culture]",//杀人拿一半产能的钱
+			
+			
+           "Units in cities cost no Maintenance"//城市中的设备不需要维护成本
+		"Damage is ignored when determining unit Strength"//一直都能全力
+		"[-100]% maintenance costs"//改变维护费用
+		"[100] Unit Supply"//单位补给
+		"Enemy [All] units must spend [1] extra movement points when inside your territory"//敌人在城市额外移动
+		"Enemy [Wounded] units must spend [20] extra movement points when inside your territory"
+		"[-1 Food] from [All] tiles [in all cities]",
+			"[-1 Production] from [All] tiles [in all cities]",
+			"[-1 Gold] from [All] tiles [in all cities]"
+		"[-1 Food] from [Land] tiles [in all cities]<before the [Classical era]>",
+			"[-1 Production] from [Land] tiles [in all cities]<before the [Classical era]>",
+			"[-1 Gold] from [Land] tiles [in all cities]<before the [Classical era]>"
+			"[-1 Food] from [Land] tiles [in all cities]<before the [Medieval era]>",
+			"[-1 Production] from [Land] tiles [in all cities]<before the [Medieval era]>",
+			"[-1 Gold] from [Land] tiles [in all cities]<before the [Medieval era]>"
+			"[+1 Faith] from [Land] tiles [in all cities]"
+		"Provides a [龙之遗迹] in your first [99] cities for free"
+		"[+30]% Strength for cities<before the [Medieval era]>"
+		"[+30]% Strength for cities<before the [Renaissance era]>"
+		"May buy [龙之开拓者] units for [500] [Faith] [in all cities] at an increasing price ([500])"
+		"May buy [龙神柱] units for [100] [Faith] [in all cities] at an increasing price ([150])"
+		"May buy [Sword] units with [Faith] for [3] times their normal Production cost"
+			],//文明特性具体效果
+			"cities": ["流星之里","流星瀑布",]//城市名，可无限写下去，中间逗号连接*
+	},
+	
+	{
+	"name": "得文公司",
+			"leaderName": "兹伏奇大吾",
+			"adjective": ["pokemon"],
+		"startBias": ["Mountain"],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "你，兹伏奇大吾，芳缘地区的冠军，德文公司的贵公子，最关键的是…石头狂热爱好者！现在，为了实现你的野望——收集到全世界的稀有石头，又强又厉害的你决定带着你的伙伴去征服全世界。",//介绍2
+			"declaringWar": "就只有你和我。为了「最强」的头衔……让我们拿出所有本事来对战吧！",//向玩家宣战
+			"attacked": "正如我所期待的。",//被玩家宣战
+			"defeated": "没想到连我这个联盟冠军都败在你的手上了呢……",//被玩家打败时
+			"introduction": "嗨，我是大吾。我对人、宝可梦，还有稀奇的石头很有兴趣呢。",//初见
+			"neutralHello": "今天也是个很不错的早晨呢。这种日子，最适合去找石头了。",//通常问候
+			"hateHello": "夜空中的点点明光，皆是我所不识之石么…那么，就让我看看你这颗顽石能发出怎样的耀眼光辉吧！",//战争时问候
+			"tradeRequest": "相信你能给我想要的。",//向玩家申请交易时
+			"outerColor": [105, 105, 105],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "你的矿井与采石场提供额外的产能与金钱。你初始获得[采矿]与[奇石发掘]科技。"
+			"uniqueName": "石头鉴赏家",//文明特性名
+			"uniques": [
+		//"[+2 Culture] [in capital]",
+			//"[+5 Production] [in capital]"
+			
+	    	"[+1 Production] from every [Quarry]"
+	    	"[+1 Production] from every [Mine]<with [20]% chance>"
+	    	"[+2 Gold] from every [Quarry]"
+	    	"[+2 Gold] from every [Mine]"
+	    	"Starts with [Mining]",
+	    	"Starts with [奇石发掘]",
+	    	
+	    	
+			],//文明特性具体效果
+			
+			"cities": ["彩悠市","琉璃市","绿岭市","水静市","茵郁市","紫堇市","凯那市","卡那兹市","橙华市"]
+			
+	},
+	
+	
+	//////////第四世代/////////
+	
+	{
+			"name": "神奥联盟",
+			"leaderName": "竹兰",
+			"adjective": ["pokemon"],
+		"startBias": ["Tundra"],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你，身为神奥地区的冠军……抱歉我没词了，等下次更新再写吧x",//介绍2
+			"declaringWar": "空",//向玩家宣战
+			"attacked": "不害怕任何挑战，这才是冠军应该有的样子！就让你瞧瞧身为冠军的骄傲与我的全部！",//被玩家宣战
+			"defeated": "……不管是之前的你还是之后的你，要成为最强挑战者还有一段距离，但是千万不要放弃，你还有你的宝可梦在身边！",//被玩家打败时
+            "introduction": "我是竹兰，如果你也有兴趣，要不要和我一起研究宝可梦神话呢？",//初见
+            "neutralHello": "哎呀，你来了啊。",//通常问候
+            "hateHello": "对手如果是训练家的话，通过对战就能了解秉性。让什么样的宝可梦学会了什么样的招式，带了什么样的道具。没错！接下来的时间不需要言语！",//战争时问候
+            "tradeRequest": "这个我目前用不到，如果给你用的话，就不会浪费了。",//向玩家申请交易时
+			"outerColor": [135, 86, 25],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "你可以额外获得一个任意宗教加成与强化者加成，并且在冻土地块+2信仰。"
+			"uniqueName": "神话研究",//文明特性名
+			"uniques": [
+			
+			
+		    "May choose [1] additional belief(s) of any type when [founding] a religion",
+		    "May choose [1] additional [Enhancer] beliefs when [founding] a religion" //- param may be "founding" or "enhancing", beleifType may be "Pantheon", "Follower", "Founder", "Enhancer"
+		    "[+2 Faith] from [Tundra] tiles [in all cities]",
+		    "May buy [考古学家] units for [50] [Faith] [in all cities] at an increasing price ([50])"
+			],//文明特性具体效果
+			"cities": ["双叶镇","真砂镇","祝庆市","黑金市","花苑镇","百代市","家缘市","随意镇","帷幕市","野原市","神和镇","水脉市","雪峰市","滨海市",]
+			
+	},
+	
+	{
+			"name": "等离子团",
+			"leaderName": "N",
+			"adjective": ["pokemon"],
+		"startBias": ["Tundra"],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你，来自合众地区的N，为了打造一个人与宝可梦共同和谐生活的世界，努力奋战吧！",//介绍2
+			"declaringWar": "既然无法和平解决，我只能与朋友们击溃你了。",//向玩家宣战
+			"attacked": "呵呵，我对你期望太高了。现在请你注意。我和我的朋友将给予你一次考验，看看你能否看见我们光明的未来。",//被玩家宣战
+			"defeated": "未来还看不到……世界是未确定的……",//被玩家打败时
+            "introduction": "我叫N，就让你看看我全身上下对朋友满溢而出的爱吧！",//初见
+            "neutralHello": "早安。朝阳如此美丽，非常适合这样的日子呢。",//通常问候
+            "hateHello": "……没有梦想的人根本无法理解我！",//战争时问候
+            "tradeRequest": "到手的东西要如何运用，就取决于你了。",//向玩家申请交易时
+			"outerColor": [169, 169, 169],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "你可以通过神秘石来选择追求真实或者追求理想。根据你的选择，你将会获得不同的加持。"
+			"uniqueName": "黑白英雄",//文明特性名
+			"uniques": [
+			
+			
+			],//文明特性具体效果
+			"cities": ["鹿子镇","唐草镇","三曜市","七宝市","飞云市","雷文市","帆巴市","吹寄市","雪花市","双龙市","笼目镇","涟漪镇","黑色市","白森林","金轮镇"]
+			
+	},
+	
+	{
+			"name": "钻石之国",
+			"leaderName": "蒂安希",
+			"adjective": ["pokemon"],
+		//"startBias": [""],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你，某个作者猫猫夹带的私货，开始你的冒险吧！",//介绍2
+			"declaringWar": "我来打你啦！",//向玩家宣战
+			"attacked":"呜哇！",//被玩家宣战
+			"defeated": "呜呜呜……下次我一定不会输的！",//被玩家打败时
+            "introduction": "你好呀，我是蒂安希。",//初见
+            "neutralHello": "欢迎欢迎~",//通常问候
+            "hateHello": "哼*别过头*",//战争时问候
+            "tradeRequest": "要来交换吗？",//向玩家申请交易时
+			"outerColor": [255, 86, 255],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "你的人民们一旦快乐就会使国家获得大量资源，但他们的不快乐会变为四！每个奢侈品为你额外提供4点快乐，自然奇观提供双倍快乐。"
+			"uniqueName": "地下天国",//文明特性名
+			"uniques": [
+			"[200]% of excess happiness converted to [Gold]",//过度的幸福转化为,
+        "[50]% of excess happiness converted to [Science]",//过度的幸福转化为,
+        "[30]% of excess happiness converted to [Culture]",//过度的幸福转化为,
+        "[50]% of excess happiness converted to [Faith]",//过度的幸福转化为,
+        "Gain [90] Influence with a [All] gift to a City-State",//给城邦送x兵种提供n影响
+        "Retain [+400]% of the happiness from a luxury after the last copy has been traded away"//交易后保留奢侈品的n%乐……等下？可以不止100%？
+        "[4] Happiness from each type of luxury resource"//奢侈品，4快乐
+        "[+3 Happiness] for every known Natural Wonder"//增加来自自然奇观的快乐
+        "[+200]% [Happiness] from City-States"
+        
+        "[-100 Food] [in all cities]<when below [-10] Happiness>"
+        "[-100 Gold] [in all cities]<when below [-10] Happiness>"
+        "[-100 Culture] [in all cities]<when below [-10] Happiness>"
+        "[-100 Production] [in all cities]<when below [-10] Happiness>"
+        "[-90]% Strength <when below [-10] Happiness>"
+        "[-95]% Strength <when below [-20] Happiness>"
+        "[-99]% Strength <when below [-30] Happiness>"
+        "[-100]% Strength <when below [-40] Happiness>"
+        
+        "[+300]% Unhappiness from [Population] [in all cities]"
+        
+        "May buy [All] buildings with [Faith] for [3] times their normal Production cost"
+			
+			],//文明特性具体效果
+			"cities": ["钻之国",]
+			
+	},
+	
+	{
+			"name": "以太基金会",
+			"leaderName": "露莎米奈",
+			"adjective": ["pokemon"],
+		//"startBias": [""],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你……以太基金会的露莎米奈！总之描述不重要，先摸了（",//介绍2
+			"declaringWar": "空",//向玩家宣战
+			"attacked":"空",//被玩家宣战
+			"defeated": "空",//被玩家打败时
+            "introduction": "我是以太基金会的理事长，露莎米奈，很高兴见到你。",//初见
+            "neutralHello": "早安。",//通常问候
+            "hateHello": "空",//战争时问候
+            "tradeRequest": "空",//向玩家申请交易时
+			"outerColor": [5, 182, 64],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "你的大商人将为你带来双倍金钱。每当伟人被消耗时，你获得一定的科技点数。专业人员不再消耗食物。若在建造首都已有的建筑，产能则会提升。"
+			"uniqueName": "以太财团",//文明特性名
+			"uniques": [
+			
+			
+			"[+100]% Gold from Great Merchant trade missions"//增加大商人赚的钱
+			"Receive a tech boost when scientific buildings/wonders are built in capital"//建造科技建筑时获得加成
+			"[+20]% Production towards any buildings that already exist in the Capital"//首都已经建过的建筑+产能。
+			"[-100]% Food consumption by specialists [in all cities]"
+			"[+50 Science] whenever a Great Person is expended"
+			],//文明特性具体效果
+			"cities": ["以太乐园",]
+			
+	},
+	
+	//////////第八世代////////
+	{
+			"name": "马师傅武馆",
+			"leaderName": "马士德",
+			"adjective": ["pokemon"],
+		//"startBias": [""],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你……马师傅！",//介绍2
+			"declaringWar": "空",//向玩家宣战
+			"attacked":"哈哈，那就来噜！",//被玩家宣战
+			"defeated": "空",//被玩家打败时
+            "introduction": "空",//初见
+            "neutralHello": "空",//通常问候
+            "hateHello": "空",//战争时问候
+            "tradeRequest": "空",//向玩家申请交易时
+			"outerColor": [95, 165, 25],//文明内部色*
+			"innerColor": [255,255,255],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			"uniqueText": "你不处于战争时，产能粮食金钱会增加，组件军事单位的速度与军队战斗力都会大大减少。处于战争时，你的军事力量会变强，组建军事单位的速度也会大大增加，但会减少产能并且有大概率使粮食产出消失。"
+			"uniqueName": "混元极意",//文明特性名
+			"uniques": [
+			
+			
+			//非战
+			"[+2 Production] [in all cities]<when not at war>"
+			"[+2 Food] [in all cities]<when not at war>"
+			"[-50]% Culture cost of natural border growth [in all cities]<when not at war>"
+			"[+5 Gold] [in all cities]<when not at war>"
+			"[-80]% Strength<when not at war>"
+			"[-80]% Production when constructing [Military] units [in all cities]<when not at war>",
+			///战
+			"[-1 Production] [in all cities]<when at war>"
+			"Nullifies [Food] [in all cities]<when at war><with [37]% chance>"
+			"[-5 Gold] [in all cities]<when at war>"
+			"[+25]% Strength <when at war>"
+			"[+20]% XP gained from combat <when at war><with [80]% chance>",//增加获取经验
+			"[+50]% XP gained from combat <when at war><with [20]% chance>",//增加获取经验
+		"[+10]% Strength for cities<when at war>"
+		"[+1] Movement <for [All] units> <when at war><with [80]% chance>",
+		"Earn [200]% of killed [All] unit's [Strength] as [Gold]<when at war><with [67]% chance>"
+		"[+150]% Production when constructing [Military] units [in this city]<when at war>",
+		"[1] additional attacks per turn<when at war><with [33]% chance>", //可以多a一次
+			
+			],//文明特性具体效果
+			"cities": ["马师傅武馆",]
+			
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	///////////其他////////
+	
+	
+
+	
+	{
+			"name": "彩虹火箭队",
+			"leaderName": "坂木",
+			"adjective": ["pokemon"],
+		//"startBias": [""],//起始偏好
+		"preferredVictoryType": "Scientific",//当该文明作为ai时偏好路线 科技/征服/外交/文化/宗教 
+		
+			"startIntroPart1": "pocket Monster，简称pokemon。它们是这个星球上不可思议的生物，在空中、在水中、在大地上，世界的每个角落都可以看到它们的身姿。",//介绍1
+			"startIntroPart2": "而你……你确定要用这个文明？这个是内测用的东西？（x",//介绍2
+			"declaringWar": "空",//向玩家宣战
+			"attacked":"空",//被玩家宣战
+			"defeated": "空",//被玩家打败时
+            "introduction": "空",//初见
+            "neutralHello": "空",//通常问候
+            "hateHello": "空",//战争时问候
+            "tradeRequest": "空",//向玩家申请交易时
+			"outerColor": [255, 86, 255],//文明内部色*
+			"innerColor": [155,12,64],//文明外部色*
+			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
+			//"uniqueText": "空"
+			"uniqueName": "测试沙包",//文明特性名
+			"uniques": [
+			"Will not be chosen for new games"
+			//"Production to [Culture] conversion in cities changed by [+300]%"
+			"Can convert gold to science with sliders"
+			
+			
+			],//文明特性具体效果
+			"cities": ["空",]
+			
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//////////////////////////////////////////////////
+	/////////////////////////
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//////////宝可梦城邦//////
+	{
+		"name": "护林员协会",
+		"adjective": ["护林员"],
+		"startBias": ["Forest"],//初始位置倾向（可删
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "你的恶行必须受到制裁！",//主动宣战
+		"attacked": "我们不会畏惧任何挑战。",//被玩家宣战
+		"defeated": "即使我败了，我也不会让你伤害宝可梦的...",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [133,205,151],//内部颜色
+		"uniques": ["[+1 Production] from every [Jungle]"
+	    	"[+1 Production] from every [Forest]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["护林员协会"]//城市名字
+	},
+	
+	{
+		"name": "盖亚那",
+		"adjective": ["盖亚那"],
+		"startBias": ["Coast"],//初始位置倾向（可删
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "我本意和平，但我别无选择。",//主动宣战
+		"attacked": "奥，这真是个糟糕的消息……",//被玩家宣战
+		"defeated": "让我的一切成为历史的尘埃吧……",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [51,161,201],//内部颜色
+		"uniques": ["[+1 Food] from every [Coast]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["盖亚那"]//城市名字
+	},
+	
+		{
+		"name": "合能",
+		"adjective": ["合能地区"],
+		"cityStateType": "Mercantile",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "来见识见识δ‐DELTA类宝可梦吧（或许以后我会专门写出来）",//主动宣战
+		"attacked": "你做了一个糟糕的选择，很快你就会知道后果。",//被玩家宣战
+		"defeated": "强大的钢铁也无法抵挡吗……我败了。",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [128,138,135],//内部颜色
+		"uniques": ["[+9 Production] from every [Iron]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["合能市"]//城市名字
+	},
+	
+			{
+		"name": "宝可乌托邦",
+		"adjective": ["宝可乌托邦"],
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "就让你领教一下宝可梦对战的魅力！",//主动宣战
+		"attacked": "呼哈哈哈，来对战吧！",//被玩家宣战
+		"defeated": "愿赌服输。",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [255,153,18],//内部颜色
+		"uniques": ["[+25]% Strength"
+			"[+1] Movement"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["宝可乌托邦"]//城市名字
+	},
+	
+				{
+		"name": "亿奥斯岛",
+		"adjective": ["宝可梦大集结"],
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "很抱歉，我必须得这么做。",//主动宣战
+		"attacked": "希望你只是为了收集能量……",//被玩家宣战
+		"defeated": "为什么会变成这样呢……",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [155,105,156],//内部颜色
+		"uniques": ["[+25]% Strength"
+			"[+1] Movement"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["吉弗市","奥拉公园","玛尔竞技场","黎莫竞技场","媞亚苍空遗迹",]//城市名字
+	},
+	
+	// City-States sorted by cityStateType, name
+	
+
+
+
+	
+]

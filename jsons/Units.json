@@ -1,0 +1,2208 @@
+[//单位
+
+	// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/gods-and-kings/
+
+	/* Ancient Era */
+
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 106,
+		"uniques": ["Founds a new city", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population"],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Scout",
+		"unitType": "Scout",
+		"movement": 2,
+		"strength": 5,
+		"cost": 25,
+		"obsoleteTech": "Scientific Theory",
+		"uniques": ["May upgrade to [Archer] through ruins-like effects", "Never appears as a Barbarian unit"],
+		"promotions": ["Ignore terrain cost"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Warrior",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Swordsman",
+		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "This is your basic, club-swinging fighter."}
+		]
+	},
+	
+	{
+		"name": "Archer",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 7,
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Construction",
+		"upgradesTo": "Composite Bowman",
+		"attackSound": "arrow"
+	},
+	
+	{
+		"name": "Work Boats",
+		"unitType": "Civilian Water",
+		"movement": 4,
+		"cost": 30,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>", //"May create improvements on water resources", 
+		"Uncapturable"
+		"Can build [Water] improvements on tiles"
+		"Can construct [海洋扩张]",//造
+		]
+	},
+	{
+		"name": "Trireme",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 10,
+		"cost": 45,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	},
+	
+	{
+		"name": "Chariot Archer",
+		"unitType": "Archery",
+		"movement": 4,
+		"strength": 6,
+		"rangedStrength": 10,
+		"cost": 56,
+		"requiredTech": "The Wheel",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["No defensive terrain bonus", "Rough terrain penalty", "Never appears as a Barbarian unit"],
+		"attackSound": "arrow"
+	},
+	
+	{
+		"name": "Spearman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 11,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"attackSound": "metalhit"
+	},
+	
+
+	/* Classical Era */
+	{
+		"name": "Horseman",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 12,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>" ],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+	
+	{
+		"name": "Catapult",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 8,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"upgradesTo": "Trebuchet",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
+			"Must set up to ranged attack", "[-1] Sight", "Never appears as a Barbarian unit"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	
+	{
+		"name": "Composite Bowman",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 11,
+		"cost": 75,
+		"requiredTech": "Construction",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Swordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 14,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Longswordsman",
+		"obsoleteTech": "Steel",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	
+	/*
+	{
+		"name": "Swordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 14,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Longswordsman",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+		// Barbarian unique Swordsman. Has same icon and name but slightly different 3d texture
+	},
+	*/
+
+	// Medieval Era
+	{
+		"name": "Pikeman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 16,
+		"cost": 90,
+		"requiredTech": "Civil Service",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"upgradesTo": "Lancer",
+		"obsoleteTech": "Metallurgy",
+		"attackSound": "metalhit"
+	},
+	
+	{
+		"name": "Galleass",
+		"unitType": "Ranged Water",
+		"movement": 3,
+		"strength": 16,
+		"rangedStrength": 17,
+		"cost": 100,
+		"requiredTech": "Compass",
+		"obsoleteTech": "Navigation",
+		"upgradesTo": "Frigate",
+		"uniques": ["Cannot enter ocean tiles"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Knight",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 20,
+		"cost": 120,
+		"requiredTech": "Chivalry",
+		"obsoleteTech": "Military Science",
+		"upgradesTo": "Cavalry",
+		"requiredResource": "Horses",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
+		"attackSound": "horse"
+	},
+	
+	{
+		"name": "Crossbowman",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 13,
+		"rangedStrength": 18,
+		"cost": 120,
+		"requiredTech": "Machinery",
+		"upgradesTo": "Gatling Gun",
+		"obsoleteTech": "Industrialization",
+		"attackSound": "arrow"
+	},
+	
+	{
+		"name": "Trebuchet",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 14,
+		"cost": 120,
+		"requiredTech": "Physics",
+		"obsoleteTech": "Chemistry",
+		"upgradesTo": "Cannon",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","[-1] Sight","Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	
+	{
+		"name": "Longswordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 21,
+		"cost": 120,
+		"requiredTech": "Steel",
+		"upgradesTo": "Musketman",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"attackSound": "metalhit"
+	},
+
+	// Rennaisance Era
+
+	{
+		"name": "Caravel",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 20,
+		"cost": 120,
+		"requiredTech": "Astronomy",
+		"upgradesTo": "Ironclad",
+		"obsoleteTech": "Combustion",
+		"uniques": ["[+1] Sight", "May withdraw before melee ([80]%)"],
+		"hurryCostModifier": 30,
+		"attackSound": "cannon"
+	},
+	
+	{
+		"name": "Musketman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 24,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"obsoleteTech": "Rifling",
+		"attackSound": "shot"
+	},
+	
+	{
+		"name": "Privateer",
+		"unitType": "Melee Water",
+		"movement": 5,
+		"strength": 25,
+		"cost": 150,
+		"requiredTech": "Navigation",
+		"upgradesTo": "Destroyer",
+		"promotions": ["Coastal Raider I"],
+		"uniques": ["May capture killed [Water] units"],
+		"attackSound": "cannon"
+	},
+	
+	{
+		"name": "Frigate",
+		"unitType": "Ranged Water",
+		"movement": 5,
+		"strength": 25,
+		"rangedStrength": 28,
+		"cost": 185,
+		"requiredResource": "Iron",
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Electronics",
+		"upgradesTo": "Battleship",
+		"hurryCostModifier": 20,
+		"attackSound": "cannon"
+	},
+	
+	{
+		"name": "Lancer",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 25,
+		"cost": 185,
+		"requiredTech": "Metallurgy",
+		"requiredResource": "Horses",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
+		"promotions": ["Formation I"],
+		"upgradesTo": "Anti-Tank Gun",
+		"obsoleteTech": "Combined Arms",
+		"attackSound": "horse"
+	},
+	
+	{
+		"name": "Cannon",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 20,
+		"cost": 185,
+		"requiredTech": "Chemistry",
+		"upgradesTo": "Artillery",
+		"obsoleteTech": "Dynamite",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","[-1] Sight","Never appears as a Barbarian unit"],
+		"attackSound": "cannon"
+	},
+
+	// Industrial Era
+
+	{
+		"name": "Gatling Gun",
+		"unitType": "Ranged Gunpowder",
+		"range": 1,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 30,
+		"cost": 225,
+		"requiredTech": "Industrialization",
+		"upgradesTo": "Machine Gun",
+		"obsoleteTech": "Ballistics",
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Rifleman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"attackSound": "shot"
+	},
+	
+	{
+		"name": "Cavalry",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combustion",
+		"requiredResource": "Horses",
+		"upgradesTo": "Landship",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
+		"attackSound": "horse"
+	},
+
+	{
+		"name": "Ironclad",
+		"unitType": "Melee Water",
+		"movement": 3,
+		"strength": 45,
+		"cost": 250,
+		"requiredTech": "Steam Power",
+		"requiredResource": "Coal",
+		"upgradesTo": "Destroyer",
+		"obsoleteTech": "Combustion",
+		"uniques": ["[+33]% Strength <vs cities>","Double movement in [Coast]", "Never appears as a Barbarian unit"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Artillery",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 21,
+		"rangedStrength": 28,
+		"range": 3,
+		"cost": 320,
+		"requiredTech": "Dynamite",
+		"upgradesTo": "Rocket Artillery",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
+			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "artillery"
+	},
+
+	// Modern era
+
+	{
+		"name": "Submarine",
+		"unitType": "Submarine",
+		"movement": 5,
+		"strength": 35,
+		"rangedStrength": 60,
+		"cost": 325,
+		"requiredTech": "Refrigeration",
+		"upgradesTo": "Nuclear Submarine",
+		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "Never appears as a Barbarian unit"],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Great War Infantry",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 50,
+		"cost": 320,
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "Infantry",
+		"obsoleteTech": "Plastics",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Triplane",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 35,
+		"range": 5,
+		"interceptRange": 5,
+		"cost": 325,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Fighter",
+		"obsoleteTech": "Radar",
+		"uniques": ["[50]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Great War Bomber",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 6,
+		"cost": 325,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Bomber",
+		"obsoleteTech": "Radar",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Infantry",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 70,
+		"cost": 375,
+		"requiredTech": "Plastics",
+		"upgradesTo": "Mechanized Infantry",
+		"obsoleteTech": "Mobile Tactics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Carrier",
+		"unitType": "Aircraft Carrier",
+		"movement": 5,
+		"strength": 40,
+		"cost": 375,
+		"requiredTech": "Electronics",
+		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
+	},
+	{
+		"name": "Battleship",
+		"unitType": "Ranged Water",
+		"movement": 5,
+		"strength": 55,
+		"rangedStrength": 55,
+		"range": 3,
+		"cost": 375,
+		"requiredResource": "Oil",
+		"requiredTech": "Electronics",
+		"uniques": ["Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+		// Does not actually upgrade to Missile Cruisers
+	},
+	{
+		"name": "Machine Gun",
+		"unitType": "Ranged Gunpowder",
+		"range": 1,
+		"movement": 2,
+		"strength": 60,
+		"rangedStrength": 60,
+		"cost": 350,
+		"requiredTech": "Ballistics",
+		"upgradesTo": "Mechanized Infantry",
+		"attackSound": "machinegun"
+		// Upgrades to Bazooka in BNW
+	},
+	{
+		"name": "Anti-Aircraft Gun",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"interceptRange": 2,
+		"strength": 50,
+		"cost": 375,
+		"requiredTech": "Ballistics",
+		"upgradesTo": "Mobile SAM",
+		"obsoleteTech": "Rocketry",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Air] units>", "[+150]% Strength <vs [Helicopter] units>", "Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Landship",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 60,
+		"cost": 350,
+		"requiredTech": "Combustion",
+		"requiredResource": "Oil",
+		"upgradesTo": "Tank",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Destroyer",
+		"unitType": "Melee Water",
+		"movement": 6,
+		"strength": 55,
+		"interceptRange": 2,
+		"cost": 375,
+		"requiredTech": "Combustion",
+		"uniques": ["Can see invisible [Submarine] units", "[40]% chance to intercept air attacks",
+			"May withdraw before melee ([80]%)", "[+100]% Strength <vs [Submarine] units>"],
+		"attackSound": "shipguns"
+	},
+
+	// Atomic Era
+
+	{
+		"name": "Marine",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 65,
+		"cost": 400,
+		"requiredTech": "Pharmaceuticals",
+		"promotions": ["Amphibious"],
+		"uniques": ["Normal vision when embarked", "Defense bonus when embarked"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength": 45,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 375,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "Jet Fighter",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"attackSound": "machinegun"
+	},
+	
+	{
+		"name": "Bomber",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 65,
+		"rangedStrength": 65,
+		"range": 10,
+		"cost": 375,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "Stealth Bomber",
+		"attackSound": "bombing"
+	},
+
+	{
+		"name": "Paratrooper",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 65,
+		"cost": 375,
+		"requiredTech": "Radar",
+		"uniques": ["May Paradrop up to [5] tiles from inside friendly territory", "Never appears as a Barbarian unit"],
+		"attackSound": "shot"
+		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
+	},
+	{
+		"name": "Tank",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 70,
+		"cost": 375,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"upgradesTo": "Modern Armor",
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+
+	{
+		"name": "Anti-Tank Gun",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 50,
+		"cost": 300,
+		"requiredTech": "Combined Arms",
+		"upgradesTo": "Helicopter Gunship",
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Atomic Bomb",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 10,
+		"cost": 600,
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Uranium",
+		"promotions" : ["Evasion"],
+		"uniques": ["Nuclear weapon of Strength [1]", "Only available <if [Manhattan Project] is constructed>", "Self-destructs when attacking",
+			"Blast radius [2]"],
+		"attackSound": "nuke"
+		// Plane rather than a missile - can be based in city or Carrier only.
+		// Can be intercepted, but must die for it not to take effect.
+	},
+	{
+		"name": "Rocket Artillery",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 45,
+		"rangedStrength": 60,
+		"range": 3,
+		"cost": 425,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Aluminum",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
+			"[-1] Sight", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Mobile SAM",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"interceptRange": 2,
+		"strength": 65,
+		"cost": 425,
+		"requiredTech": "Rocketry",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Air] units>",
+			"[+150]% Strength <vs [Helicopter] units>", "Never appears as a Barbarian unit"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Guided Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 8,
+		"cost": 150,
+		"requiredTech": "Advanced Ballistics",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Nuclear Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 12,
+		"cost": 1000,
+		"requiredTech": "Advanced Ballistics",
+		"uniques": ["Nuclear weapon of Strength [2]", "Only available <if [Manhattan Project] is constructed>",
+			"Blast radius [2]", "Consumes [2] [Uranium]"],
+		"attackSound": "nuke"
+	},
+	{
+		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
+		// Unit embarks like any other ground unit and has penalty for attacking over river or from embarked state
+		"name": "Helicopter Gunship",
+		"unitType": "Helicopter",
+		"movement": 6,
+		"strength": 60,
+		"cost": 425,
+		"requiredTech": "Computers",
+		"requiredResource": "Aluminum",
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
+			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+
+	// Information Era
+	{
+		"name": "Nuclear Submarine",
+		"unitType": "Submarine",
+		"movement": 6,
+		"strength": 50,
+		"range": 3,
+		"rangedStrength": 85,
+		"cost": 425,
+		"requiredTech": "Telecommunications",
+		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "[+1] Sight", "Can carry [2] [Missile] units", "Never appears as a Barbarian unit"],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Mechanized Infantry",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 90,
+		"cost": 375,
+		"requiredTech": "Mobile Tactics",
+		"uniques": ["Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Missile Cruiser",
+		"unitType": "Ranged Water",
+		"movement": 7,
+		"strength": 80,
+		"rangedStrength": 100,
+		"range": 3,
+		"interceptRange": 2,
+		"cost": 425,
+		"requiredTech": "Robotics",
+		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Submarine] units",
+			"Can carry [3] [Missile] units", "[+100]% Strength <vs [Submarine] units>", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Modern Armor",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 100,
+		"cost": 425,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Giant Death Robot",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Jet Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 75,
+		"range": 10,
+		"interceptRange": 10,
+		"cost": 425,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "Giant Death Robot",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 150,
+		"cost": 425,
+		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Uranium",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Stealth Bomber",
+		"unitType": "Bomber",
+		"movement": 2,
+		"strength": 85,
+		"rangedStrength": 85,
+		"range": 20,
+		"cost": 425,
+		"requiredTech": "Stealth",
+		"requiredResource": "Aluminum",
+		"uniques": ["Damage taken from interception reduced by [100]%", "Cannot be carried by [Carrier] units", "[+4] Sight", "Can see over obstacles"],
+		"attackSound": "bombing"
+	},
+
+	/* Great people */
+
+	{
+		"name": "Great Artist",
+		"unitType": "Civilian",
+		"uniques": ["Can start an [8]-turn golden age", "Can construct [Landmark]", "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Scientist",//大科学家
+		"unitType": "Civilian",
+		"uniques": ["Can hurry technology research", //加速
+		"Can construct [Academy]",//造学院
+		 "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",
+		"unitType": "Civilian",
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
+			"Can construct [Customs house]", "Great Person - [Gold]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",
+		"unitType": "Civilian",
+		"uniques": ["Can speed up construction of a building", "Can construct [Manufactory]", "Great Person - [Production]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Prophet",
+		"unitType": "Civilian",
+		"uniques": ["Can construct [Holy site] <if it hasn't used other actions yet>", "Can [Spread Religion] [4] times",
+			"Removes other religions when spreading religion", "May found a religion", "May enhance a religion",
+			"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
+			"Unbuildable", "Religious Unit", "Hidden when religion is disabled",
+			"Takes your religion over the one in their birth city"],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Great General",
+		"unitType": "Civilian",
+		"uniques": ["Can start an [8]-turn golden age", "[+15]% Strength bonus for [Military] units within [2] tiles", "Can construct [Citadel]",
+			"Great Person - [War]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	
+
+	/* Religious units */
+
+	{
+		"name": "Missionary",
+		"unitType": "Civilian",
+		"uniques": ["Can [Spread Religion] [2] times", "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[-1] Sight", "Unbuildable", "Religious Unit", "Hidden when religion is disabled"],
+		"movement": 4,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Inquisitor",
+		"unitType": "Civilian",
+		"uniques": ["Prevents spreading of religion to the city it is next to",
+			"Can [Remove Foreign religions from your own cities] [1] times",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is an enhanced religion]",
+			"[+1] Sight", "Hidden when religion is disabled", "Unbuildable", "Religious Unit"
+		],
+		"movement": 3
+	},
+
+	/* Spaceship Parts */
+
+	// Must be transported to the Capital for launch.
+	// Can be destroyed by any hostile military unit walking in their tile.
+	{
+		"name": "SS Booster",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Advanced Ballistics",
+		"requiredResource": "Aluminum",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [3] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Cockpit",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Satellites",
+		"requiredResource": "Aluminum",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Engine",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Particle Physics",
+		"requiredResource": "Aluminum",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Stasis Chamber",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Nanotechnology",
+		"requiredResource": "Aluminum",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	///————————
+	///————————工人系列
+	
+	{
+		"name": "农民",
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": ["Can build [Farm] improvements on tiles",
+		"Can build [Pasture] improvements on tiles",
+		"Can build [Camp] improvements on tiles",
+		"Can build [Plantation] improvements on tiles",
+		"Can build [Remove Forest] improvements on tiles",
+		"Can build [Remove Jungle] improvements on tiles",
+		"Can build [Remove Marsh] improvements on tiles",
+		"Can build [Remove Railroad] improvements on tiles",
+		"Can build [Remove Road] improvements on tiles",
+		],
+		"cost": 40
+	},
+	
+	{
+		"name": "Worker",//原版工人
+		"unitType": "Civilian",
+		"movement": 2,
+		"requiredTech": "Mining",//需要科技
+		"uniques": ["Can build [Mine] improvements on tiles",
+		"Can build [Quarry] improvements on tiles",
+		"Can build [Lumber mill] improvements on tiles",
+		"Can build [Road] improvements on tiles",
+		"Can build [Remove Forest] improvements on tiles",
+		"Can build [Remove Jungle] improvements on tiles",
+		"Can build [Remove Marsh] improvements on tiles",
+		"Can build [Remove Railroad] improvements on tiles",
+		"Can build [Remove Road] improvements on tiles",
+		],
+		"cost": 50
+	},
+	
+	{
+		"name": "以太基建",
+		"unitType": "Civilian",
+		"replaces": "Worker",//代替原版兵种
+		"uniqueTo": "以太基金会",
+		"movement": 3,
+		"requiredTech": "Mining",//需要科技
+		"uniques": ["Can build [科技农场] improvements on tiles",
+		"Can build [自动采矿设备] improvements on tiles",
+		"Can build [自动化种植园] improvements on tiles",
+		"Can build [自动采矿设备β] improvements on tiles",
+		"Can build [以太饲育场] improvements on tiles",
+		"Can build [Road] improvements on tiles",
+		"Can build [Remove Forest] improvements on tiles",
+		"Can build [Remove Jungle] improvements on tiles",
+		"Can build [Remove Marsh] improvements on tiles",
+		"Can build [Remove Railroad] improvements on tiles",
+		"Can build [Remove Road] improvements on tiles",
+		],
+		"cost": 80
+	},
+	
+	{
+		"name": "腕力",
+		"unitType": "格斗系",
+		"movement": 2,
+		"uniques": [
+		"Can build [Mine] improvements on tiles",
+		"Can build [Quarry] improvements on tiles",
+		"Can build [Lumber mill] improvements on tiles",
+		"Can build [Road] improvements on tiles",
+		"Can build [Remove Forest] improvements on tiles",
+		"Can build [Remove Jungle] improvements on tiles",
+		"Can build [Remove Marsh] improvements on tiles",
+		"Can build [Remove Railroad] improvements on tiles",
+		"Can build [Remove Road] improvements on tiles",
+		],//可以建造
+		"cost": 55,
+		"upgradesTo": "豪力",//可升级为
+		"obsoleteTech": "宝可梦探寻①",//过时科技，骑术
+	},
+	
+	{
+		"name": "豪力",
+		//
+		"unitType": "格斗系",
+		"movement": 2,
+		"uniques": [
+		"Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+		"Can build [Mine] improvements on tiles",
+		"Can build [Quarry] improvements on tiles",
+		"Can build [Lumber mill] improvements on tiles",
+		"Can build [Road] improvements on tiles",
+		"Can build [Farm] improvements on tiles",
+		"Can build [Pasture] improvements on tiles",
+		"Can build [Camp] improvements on tiles",
+		"Can build [Remove Forest] improvements on tiles",
+		"Can build [Remove Jungle] improvements on tiles",
+		"Can build [Remove Marsh] improvements on tiles",
+		"Can build [Remove Railroad] improvements on tiles",
+		"Can build [Remove Road] improvements on tiles",
+		
+		],
+		"cost": 70,
+		"upgradesTo": "怪力",//可升级为
+		"requiredTech": "宝可梦探寻①",//需要科技，骑术
+	},
+	
+	{
+		"name": "怪力",
+		//
+		"unitType": "格斗系",
+		"movement": 3,
+		"strength": 16,//近战能力=血量
+		"uniques": [
+		"Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+		"Can build [Mine] improvements on tiles",
+		"Can build [Quarry] improvements on tiles",
+		"Can build [Lumber mill] improvements on tiles",
+		"Can build [Road] improvements on tiles",
+		"Can build [Farm] improvements on tiles",
+		"Can build [Pasture] improvements on tiles",
+		"Can build [Camp] improvements on tiles",
+		"Can build [Plantation] improvements on tiles",
+		"Can build [Remove Forest] improvements on tiles",
+		"Can build [Remove Jungle] improvements on tiles",
+		"Can build [Remove Marsh] improvements on tiles",
+		"Can build [Remove Railroad] improvements on tiles",
+		"Can build [Remove Road] improvements on tiles",
+		"Can build [Water] improvements on tiles",//可以建造
+		"Uncapturable"//不可捕获
+		],//特性
+		"cost": 80,
+		"requiredTech": "Chivalry",//需要科技骑士
+	},
+	
+	
+	/////————————
+	
+	
+	
+	
+	
+	{
+		"name": "驯兽使",//兵种名称
+		"unitType": "Sword",//兵种类型
+		"movement": 2,//移动力
+		"strength": 9,//近战能力=血量
+		"cost": 40,//产能花费（按比例换成金钱）
+		"replaces": "Warrior",//代替原版兵种
+		"uniqueTo": "关都联盟",
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Swordsman",
+		"attackSound": "nonmetalhit",
+		"uniques":["May capture killed [Military] units<with [10]% chance>",
+		"Never appears as a Barbarian unit"//野人不能造
+		]
+		"civilopediaText":[{text:"勇于接触宝可梦，尝试与宝可梦沟通的人。"}]
+		
+	},
+	
+	{
+		"name": "精灵球",//兵种名称
+		"unitType": "Sword",//兵种类型
+		"movement": 2,//移动力
+		"strength": 5,//近战能力=血量
+		"cost": 50,//产能花费（按比例换成金钱）
+		"requiredTech": "铸球术",//需要科技
+		//"obsoleteTech": "精灵球制作",//过时科技
+		"requiredResource": "球果",//需要资源
+		"uniques":[
+		"[+200]% Strength <when attacking> <vs [Barbarian] units> <with [50]% chance>",
+		"[+200]% Strength <when attacking> <vs [{Barbarian} {Wounded}] units> <with [50]% chance>",
+		"May capture killed [Barbarian] units <with [40]% chance>",
+		"Never appears as a Barbarian unit"//野人不能造
+		]
+		"civilopediaText":[{text:"手工制作的精灵球"}]
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/////////////////////
+	
+	/////////人单位////////////
+	
+	////////////////////
+    {
+		"name": "训练师",//兵种名称
+		"unitType": "Sword",//兵种类型
+		"movement": 2,//移动力
+		"strength": 10,//近战能力=血量
+		"cost": 50,//产能花费（按比例换成金钱）
+		"requiredTech": "Archery",//需要科技弓箭
+		"obsoleteTech": "铸球术",//过时科技
+		//"requiredResource": "球果",//需要资源
+		"upgradesTo": "宝可梦护林员",//可升级
+		"uniques":["May capture killed [Military] units<with [20]% chance>",
+		"Never appears as a Barbarian unit"//野人不能造
+		]
+		"civilopediaText":[{text:"训练宝可梦的训练家。"}]
+	},
+	
+	{
+		"name": "宝可梦护林员",//兵种名称
+		"unitType": "Sword",//兵种类型
+		"movement": 2,//移动力
+		"strength": 8,//近战能力=血量
+		"rangedStrength":10 ,//远程能力
+		"cost": 65,//产能花费（按比例换成金钱）
+		"requiredTech": "铸球术",//需要科技
+		//"obsoleteTech": "Construction",//过时科技
+		//"requiredResource": "球果",//需要资源
+		//"upgradesTo": "Composite Bowman",//可升级
+		"uniques":["May capture killed [Military] units<with [25]% chance>",
+		"Never appears as a Barbarian unit"//野人不能造
+		]
+		"civilopediaText":[{text:"保护人类与宝可梦的正义人士，尽职尽责的执行工作。"}]
+	},
+	
+	
+	
+	
+    {
+		"name": "工匠",//兵种名称
+		"unitType": "Civilian",//兵种类型
+		"movement": 2,//移动力
+		"cost": 70,//产能花费（按比例换成金钱）
+		"replaces": "Worker",//代替原版兵种
+		"uniqueTo": "芳缘联盟",
+		"uniques":[
+		"May Paradrop up to [5] tiles from inside friendly territory", 
+		"Can build [Land] improvements on tiles"
+		"Never appears as a Barbarian unit"//野人不能造
+		]
+	},
+	
+	{
+		"name": "开拓者",
+		"unitType": "Civilian",
+		"movement": 2,//移动力
+		"replaces": "Settler",//代替原版兵种
+		"uniqueTo": "芳缘联盟",
+		"cost": 106,
+		"uniques": ["Founds a new city", 
+		"May Paradrop up to [4] tiles from inside friendly territory", 
+			"Requires at least [2] population"],
+		"hurryCostModifier": 20
+	},
+	
+	{
+		"name": "考古学家",//兵种名称
+		"unitType": "Sword",//兵种类型
+		"movement": 2,//移动力
+		"strength": 8,//近战能力=血量
+		"cost": 40,//产能花费（按比例换成金钱）
+		//"replaces": "Warrior",//代替原版兵种
+		"uniqueTo": "神奥联盟",
+		"uniques":[
+		"Unbuildable",//不可组建
+		"Can construct [考古探索]",
+		"Never appears as a Barbarian unit"//野人不能造
+		]
+		"civilopediaText":[{text:"可以进行遗迹勘察的人员。"}]
+	},
+	
+	{
+		"name": "护城龙",//兵种名称
+		"unitType": "龙系",//兵种类型
+		"movement": 1,//移动力
+		"strength": 50,//近战能力=血量
+		"cost": 0,//产能花费（按比例换成金钱
+		"uniqueTo": "流星之民",
+		"uniques":[
+		"Unbuildable",//不可组建
+		"Never appears as a Barbarian unit"//野人不能造
+		"Can only heal by pillaging"//只能掠夺回血
+		"[-100]% Strength <vs cities>"
+		"[-50]% Strength for enemy [Military] units in adjacent [All] tiles"//临近的敌人减少攻击力
+		"Cannot attack"//不能攻击
+		"[+2] Sight <for [All] units>",//增加视野
+		]
+	},
+	
+	{
+		"name": "流星祭坛",//兵种名称
+		"unitType": "Sword",//兵种类型
+		"movement": 1,//移动力
+		"strength": 30,//近战能力=血量
+		"cost": 180,//产能花费（按比例换成金钱
+		"uniqueTo": "流星之民",
+		"uniques":[
+		"Never appears as a Barbarian unit"//野人不能造
+		"Can only heal by pillaging"//只能掠夺回血
+		"[-10]% Strength for enemy [Military] units in adjacent [All] tiles"//临近的敌人减少攻击力
+		"Cannot attack"//不能攻击
+		"[+1] Sight <for [All] units>",//增加视野
+		]
+	},
+	
+	{
+		"name": "龙之开拓者",
+		"unitType": "Civilian",
+		"movement": 1,//移动力
+		"replaces": "Settler",//代替原版兵种
+		"uniqueTo": "流星之民",
+		"cost": 290,
+		"uniques": ["Founds a new city", 
+			"Requires at least [4] population"],
+		"hurryCostModifier": 100
+	},
+	
+	
+	
+	/////////
+	
+	
+	
+	//////////
+	
+	
+	
+	/////////
+	
+	
+	//////PM/////
+    {
+		"name": "波波",
+		"unitType": "飞行系",//兵种
+		"movement": 2,//移动
+		"strength": 4,//近战能力=血量
+		"cost": 25,
+		//"requiredTech": "Animal Husbandry",//需要科技
+		"uniques": ["Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+			"[+1] Sight <for [All] units>",//增加视野
+			]
+		"obsoleteTech": "宝可梦探寻①",//过时科技
+		"upgradesTo": "比比鸟",//可升级为
+		//"promotions": ["Quick Study"],//免费晋升：快速学习
+	},
+	
+	{
+		"name": "比比鸟",
+		//
+		"unitType": "飞行系",//兵种，直升机
+		"movement": 2,//移动
+		"strength": 8,//近战能力=血量
+		"cost": 45,
+		"requiredTech": "宝可梦探寻①",//需要科技
+		"uniques": ["Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+			"[+2] Sight <for [All] units>",//增加视野
+			//"Quick Study"//快速学习
+			]
+		"obsoleteTech": "铸球术",//过时科技，骑术
+		"upgradesTo": "比雕",//可升级为
+		//"promotions": ["Quick Study"],//免费晋升：快速学习
+	},
+	
+	{
+		"name": "比雕",
+		//
+		"unitType": "飞行系",//兵种，直升机
+		"movement": 3,//移动
+		"strength": 10,//近战能力=血量
+		"cost": 65,
+		"requiredTech": "铸球术",//需要科技
+		"uniques": ["Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+			"[+2] Sight <for [All] units>",//增加视野
+			//"Quick Study"//快速学习
+			]
+	},
+	
+	{
+		"name": "皮卡丘",
+		//
+		"unitType": "电系",//兵种
+		"movement": 2,//移动
+		"strength": 5,//近战能力=血量
+		"rangedStrength":9,//远程能力
+		"cost": 45,
+		"requiredTech": "宝可梦探寻②",//需要科技
+		"uniques": [
+			]
+		//"obsoleteTech": "Engineering",//过时科技
+		//"upgradesTo": "三地鼠",//可升级为
+		//"promotions": ["挖地洞"],//免费晋升：快速学习
+	},
+	
+	{
+		"name": "地鼠",
+		//
+		"unitType": "地面系",//兵种
+		"movement": 2,//移动
+		"strength": 10,//近战能力=血量
+		"cost": 70,
+		"requiredTech": "宝可梦探寻②",//需要科技
+		"uniques": ["Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+			"Can pass through impassable tiles",//可以无视地行
+			//"Invisible to non-adjacent units", //只有附近的才能看到
+"Can see invisible [地面系] units",//可以看到周围的地面单位
+			"Can build [Road] improvements on tiles",//可以制造道路
+			"May enter foreign tiles without open borders"//可以进入别人国界
+			]
+		"obsoleteTech": "Engineering",//过时科技
+		"upgradesTo": "三地鼠",//可升级为
+		"promotions": ["挖地洞"],//免费晋升：快速学习
+	},
+	
+	{
+		"name": "三地鼠",
+		//
+		"unitType": "地面系",//兵种
+		"movement": 2,//移动
+		"strength": 15,//近战能力=血量
+		"cost": 90,
+		"requiredTech": "Engineering",//需要科技
+		"uniques": ["Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+			"Can pass through impassable tiles",//可以无视地行
+			//"Invisible to non-adjacent units", //只有附近的才能看到
+"Can see invisible [地面系] units",//可以看到周围的地面单位
+			"Can build [Road] improvements on tiles",//可以制造道路
+			"Can build [Fort] improvements on tiles",//可以造堡垒
+			"Can build [沙地狱] improvements on tiles",//可以制造沙地狱
+			"May enter foreign tiles without open borders"//可以进入别人国界
+			]
+			"promotions": ["挖地洞"],//免费晋升：快速学习
+	},
+	
+    {
+		"name": "漂浮泡泡",
+		"unitType": "一般系",
+		//
+		"movement": 2,
+		"strength": 10,
+		"cost": 80,
+		"requiredTech": "宝可梦探寻③",//需求科技
+		//"obsoleteTech": "Astronomy",//过时科技
+		"uniques": [
+		//"[1] additional attacks per turn", 
+		//"Can move after attacking",
+		],
+		//"upgradesTo": "巨翅飞鱼",//可升级为
+		"attackSound": "arrow"
+	},
+	
+	{
+		"name": "小球飞鱼",
+		"unitType": "水系-海洋",
+		//
+		"movement": 4,
+		"strength": 8,
+		"rangedStrength": 14,
+		"cost": 80,
+		"requiredTech": "宝可梦探寻③",//需求科技
+		"obsoleteTech": "Astronomy",//过时科技
+		"uniques": [
+		//"[1] additional attacks per turn", 
+		//"Can move after attacking",
+		],
+		"upgradesTo": "巨翅飞鱼",//可升级为
+		"attackSound": "arrow"
+	},
+	
+	{
+		"name": "巨翅飞鱼",
+		"unitType": "水系-海洋",
+		//
+		"movement": 5,
+		"strength": 28,
+		"rangedStrength": 25,
+		"cost": 140,
+		"requiredTech": "Astronomy",//需求科技
+		"uniques": [
+		//"[3] additional attacks per turn",
+		//"Can move after attacking",
+		"Can carry [4] [铁炮鱼] units"//可携带单位
+		],
+		"attackSound": "arrow"
+	},
+	
+	{
+		"name": "铁炮鱼",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 20,
+		"rangedStrength": 20,
+		"range": 4,
+		"interceptRange": 2,
+		"cost": 100,
+		"requiredTech": "Astronomy",
+		"uniques": [
+		"[+15]% Strength <when attacking>",
+		"[+25]% Strength <vs [Wounded] units>"
+		"Cannot attack <in [Land] tiles>"//不能攻击
+		"[-3] Range <in [Land] tiles>",//射程增加
+		
+		],
+		"attackSound": "machinegun"
+	},
+	
+	{
+		"name": "刺龙王",
+		"unitType": "水系-海洋",
+		//
+		"movement": 2,
+		"strength": 50,
+		"rangedStrength": 30,
+		"cost": 200,
+		"requiredTech": "Navigation",//需求科技
+		"uniques": ["[+150]% Strength <vs cities> <when attacking>",
+		"Must set up to ranged attack",//需要架设
+		"[+2] Range",//射程增加
+		"Never appears as a Barbarian unit"],
+		"attackSound": "arrow"
+	},
+	
+	{
+		"name": "未知图腾",
+		//
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 10,
+		"uniques": ["Only available <if [阿露福遗迹] is constructed>"]
+	},
+	
+
+	
+
+	
+	{
+		"name": "烈焰马",
+		//"replaces": "Knight",//取代
+		"unitType": "火系",
+		"movement": 4,
+		"strength": 18,//近战能力
+		"cost": 130,
+		"requiredTech": "Chivalry",//需求科技
+		"obsoleteTech": "Military Science",//过时科技
+		"upgradesTo": "Cavalry",//可升级为
+		//"requiredResource": "Horses",//需要资源
+		"uniques": [
+		"Can move after attacking",//可以在攻击后移动
+		"No defensive terrain bonus",//防守时没有地形奖励
+		"[-33]% Strength <vs cities> <when attacking>",//攻城时-33%力
+		"[1] additional attacks per turn", //可以多a一次
+		"Can pass through impassable tiles",//可以无视地行
+		 ],
+		"attackSound": "horse"
+	},
+	
+    {
+		"name": "超音蝠",
+		//
+		"unitType": "飞行系",//兵种
+		"movement": 2,//移动
+		"strength": 8,//近战能力=血量
+		"cost": 45,
+		"uniques": [
+			"Heals [25] damage if it kills a unit"//杀人回血
+			]
+		"obsoleteTech": "宝可梦探寻③",//过时科技
+		"upgradesTo": "大嘴蝠",//可升级为
+	},
+	
+	{
+		"name": "大嘴蝠",
+		//
+		"unitType": "飞行系",//兵种
+		"movement": 2,//移动
+		"strength": 14,//近战能力=血量
+		"cost": 90,
+		"requiredTech": "宝可梦探寻③",//需要科技
+		"uniques": [
+			"[+1] Sight <for [All] units>",//增加视野
+			"Heals [35] damage if it kills a unit"
+			]
+		"obsoleteTech": "Astronomy",//过时科技
+		"upgradesTo": "叉字蝠",//可升级为
+	},
+	
+	{
+		"name": "叉字蝠",
+		//
+		"unitType": "飞行系",//兵种
+		"movement": 4,//移动
+		"strength": 25,//近战能力=血量
+		"cost": 120,
+		"requiredTech": "Astronomy",//需要科技
+		"uniques": [
+		"Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+			"Can pass through impassable tiles",//可以无视地行
+			"[+3] Sight <for [All] units>",//增加视野
+			"Heals [45] damage if it kills a unit"
+			]
+	},
+	
+	{
+		"name": "战槌龙",//兵种名称
+		"unitType": "Sword",//兵种类型
+		"movement": 3,//移动力
+		"strength": 30,//近战能力=血量
+		"cost": 180,//产能花费（按比例换成金钱）
+		"requiredTech": "Archaeology",//需要科技
+		"requiredResource": "化石",//需要资源
+		////属于国家
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+		]
+		//"promotions": ["破格"],//免费晋升
+	},
+	
+	{
+		"name": "请假王",
+		"unitType": "Sword",
+		"movement": 1,
+		"strength": 30,
+		"rangedStrength": 45,
+		"cost": 180,
+		"requiredTech": "Physics",//需求科技
+		"uniques": ["[-50]% Strength <vs cities> <when attacking>",
+		"[-50]% Strength <when defending>",
+		"Must set up to ranged attack",//需要架设
+		"[-1] Range",//射程增加
+		"Never appears as a Barbarian unit"],
+		"attackSound": "arrow"
+	},
+	
+	{
+		"name": "脱壳忍者",
+		"unitType": "虫系",
+		"movement": 3,
+		"strength": 1,
+		"rangedStrength":1 ,
+		"cost": 10,
+		"requiredTech": "Philosophy",//需求科技
+		"uniques": [
+		"Unbuildable",//不可组建
+		"[+10000]% Strength <when defending><with [80]% chance>",
+		"[-1] Range",//射程增加
+		"Limited to [1] per Civilization",
+		"Never appears as a Barbarian unit"],
+		"attackSound": "arrow"
+	},
+	
+	
+	{
+		"name": "信使鸟",
+		"unitType": "Civilian",
+		"cost": 300
+		"uniques": [
+		"Can [Spread Religion] [2] times", "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+			"[-1] Sight", "Unbuildable", "Religious Unit", "Hidden when religion is disabled"],
+		"movement": 3,
+		"religiousStrength": 5000
+	},
+	
+	{
+		"name": "吉利蛋",
+		"unitType": "一般系",
+		"cost": 250
+		"movement": 3,
+		"strength": 30,
+		"uniques": [
+		"Can only heal by pillaging"//只能掠夺回血
+		"Cannot attack"//不能攻击
+		"Never appears as a Barbarian unit"//野人不能造
+		"All adjacent units heal [20] HP when healing"//相邻单位额外回血
+		"Only available <if [宝可梦中心] is constructed>"
+	
+	],
+	
+	},
+	
+	{
+		"name": "鬼斯",
+		"unitType": "幽灵系",
+		"cost": 70,
+		"movement": 2,
+		"strength": 8,
+		//"uniques": [],
+		"requiredTech": "宝可梦探寻①",//需要科技
+		"obsoleteTech": "宝可梦探寻⑤",//过时科技
+		"upgradesTo": "鬼斯通",//可升级为
+	
+	},
+	
+	{
+		"name": "鬼斯通",
+		"unitType": "幽灵系",
+		"cost": 120,
+		"movement": 2,
+		"strength": 16,
+		//"uniques": [],
+		"requiredTech": "宝可梦探寻⑤",//需要科技
+		"obsoleteTech": "宝可梦通讯",//过时科技
+		"upgradesTo": "耿鬼",//可升级为
+	
+	},
+	
+	{
+		"name": "耿鬼",
+		"unitType": "幽灵系",
+		"cost": 280,
+		"movement": 3,
+		"strength": 30,
+		"uniques": ["Can move after attacking"],
+		"requiredTech": "宝可梦通讯",//需要科技
+	
+	},
+	
+    {
+		"name": "咕咕",
+		"unitType": "飞行系",//兵种
+		"movement": 2,//移动
+		"strength": 6,//近战能力=血量
+		"cost": 40,
+		"requiredTech": "宝可梦探寻②",//需要科技
+		"uniques": ["Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+			"[+2] Sight <for [All] units>",//增加视野
+			]
+		"obsoleteTech": "宝可梦探寻④",//过时科技
+		"upgradesTo": "猫头夜鹰",//可升级为
+		"promotions": ["看穿"],//免费晋升：快速学习
+	},
+	
+	
+	
+	{
+		"name": "猫头夜鹰",
+		"unitType": "飞行系",//兵种
+		"movement": 3,//移动
+		"strength": 12,//近战能力=血量
+		"cost": 120,
+		"requiredTech": "宝可梦探寻④",//需要科技
+		"uniques": ["Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+			"[+3] Sight <for [All] units>",//增加视野
+			]
+			"promotions": ["看穿"],//免费晋升：快速学习
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	//————————————————————————————
+	
+	
+	
+	//////准神以及精英单位or专属/////
+	{
+		"name": "由基拉",
+		//
+		"unitType": "地面系",
+		"movement": 2,
+		"strength": 5,//近战能力=血量
+		"cost": 150,
+		"uniques": [
+		"[+25]% Strength<when attacking>",//攻击时+25%
+		]
+		"requiredTech": "Mining",//需求科技
+		"obsoleteTech": "Engineering",//过时科技
+		"upgradesTo": "沙基拉斯",//可升级为
+	},
+	
+	{
+		"name": "沙基拉斯",
+		//
+		"unitType": "地面系",
+		"movement": 1,
+		"strength": 20,//近战能力=血量
+		"cost": 150,
+		"uniques": [
+		"[+25]% Strength<when defending>",//防御时+25%
+		]
+		"promotions": ["沙之力"],//免费晋升：快速学习
+		"requiredTech": "Engineering",//需求科技
+		"obsoleteTech": "Economics",//过时科技
+		"upgradesTo": "班基拉斯",//可升级为
+	},
+	
+	{
+		"name": "班基拉斯",
+		//
+		"unitType": "地面系",
+		"movement": 3,
+		"strength": 40,//近战能力=血量
+		"cost": 250,
+		"uniques": [
+		"[+30]% Strength<when defending>",//防守时时+50%
+		"[-20]% Strength for enemy [Military] units in adjacent [All] tiles"//临近的敌人减少攻击力
+		"[+25] HP when healing",//治疗时+25血
+		"Ignores Zone of Control"//忽略控制区
+		"Can build [破碎地块] improvements on tiles",//可以造破碎地块
+		"Limited to [1] per Civilization"
+		]
+		"requiredTech": "Economics",//需求科技
+	},
+	
+	{
+		"name": "Mega大针蜂",
+		"uniqueTo": "火箭队",
+		"unitType": "虫系",
+		"movement": 4,
+		"strength": 50,//近战能力=血量
+		"cost": 500,
+		"uniques": ["Unbuildable",//不可组建
+		"Cannot be purchased"//无法购买
+		"[1] additional attacks per turn", //可以多a一次
+		"Can move after attacking",//a完可以跑
+		"[+50]% Strength<when attacking>",//攻击时+50%
+		"Limited to [1] per Civilization"
+		]
+	},
+	
+
+	
+	
+	
+	
+	
+	//————————————————————————————————————//
+	
+	
+	//////神兽/////
+	{
+		"name": "水君",
+		//
+		"unitType": "水系-陆地",
+		"movement": 4,
+		"strength": 30,//近战能力=血量
+		"cost": 200,
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"Can move after attacking",//a完可以跑
+		"May withdraw before melee ([100]%)"//被近战时70%撤退
+		"[+25]% Strength<when attacking>",//攻击时+25%
+		"[+10]% Strength bonus for [Military] units within [3] tiles",
+		"Limited to [1] per Civilization"
+		"Only available <if [烧焦塔] is constructed>"
+		"[+3] Sight <for [All] units>",//增加视野
+		"[+3] Sight <for [All] units><in [Water] tiles>",//增加视野
+		]
+	},
+	
+	{
+		"name": "炎帝",
+		"uniqueTo": "Barbarians",
+		"unitType": "Sword",
+		"movement": 4,
+		"strength": 30,//近战能力=血量
+		"cost": 200,
+		"uniques": [
+		//"Never appears as a Barbarian unit"//野人不能造
+		"[+45]% Strength<when attacking>",//攻击时+25%
+		"Limited to [1] per Civilization"
+		"Only available <if [遥不可及] is constructed>"
+		]
+		"requiredTech": "Engineering",//需求科技
+	},
+	
+	{
+		"name": "雷公",
+		"uniqueTo": "Barbarians",
+		"unitType": "Sword",
+		"movement": 4,
+		"strength": 30,//近战能力=血量
+		"rangedStrength": 30,
+		"cost": 200,
+		"uniques": [
+		//"Never appears as a Barbarian unit"//野人不能造
+		"Can move after attacking",//a完可以跑
+		"[+25]% Strength<when attacking>",//攻击时+25%
+		"Limited to [1] per Civilization"
+		"Only available <if [遥不可及] is constructed>"
+		]
+		"requiredTech": "Engineering",//需求科技
+	},
+	
+	{
+		"name": "雷吉艾斯",
+		"unitType": "冰系",
+		"movement": 2,
+		"strength": 30,//近战能力=血量
+		"cost": 999999,
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"[+25]% Strength bonus for [冰系] units within [15] tiles",
+		"Limited to [1] per Civilization"
+    
+	    "[-20]% Strength for enemy [Military] units in adjacent [All] tiles"//临近的敌人减少攻击力
+	    "Cannot move<in [Desert] tiles>"
+	    "Unbuildable", //不可建造
+		"Cannot be purchased"//无法购买
+		]
+	},
+	
+	{
+		"name": "雷吉洛克",
+		"unitType": "岩石系",
+		"movement": 2,
+		"strength": 20,//近战能力=血量
+		"rangedStrength": 30,
+		"cost": 999999,
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"[+25]% Strength bonus for [岩石系] units within [15] tiles",
+		"Limited to [1] per Civilization"
+        "Cannot move<in [Water] tiles>"
+	    "Unbuildable", //不可建造
+		"Cannot be purchased"//无法购买
+		]
+	},
+	
+	{
+		"name": "雷吉斯奇鲁",
+		"unitType": "钢系",
+		"movement": 2,
+		"strength": 18,//近战能力=血量
+		"cost": 999999,
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"[+25]% Strength bonus for [钢系] units within [15] tiles",
+		"Limited to [1] per Civilization"
+	    "[-20]% Strength for enemy [Military] units in adjacent [All] tiles"//临近的敌人减少攻击力
+	    "[+50]% Strength <when defending>",
+	    "Unbuildable", //不可建造
+		"Cannot be purchased"//无法购买
+		]
+	},
+	
+	
+	{
+		"name": "超梦",
+		//
+		"unitType": "超能系",
+		"movement": 40,
+		"strength": 999,//近战能力=血量
+		"requiredTech": "Computers",//需要科技
+		"cost": 10000000,
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"[15] additional attacks per turn", //可以多a一次
+		"Can move after attacking",//a完可以跑
+		"May withdraw before melee ([100]%)"//被近战时70%撤退
+		"[+500]% Strength<when attacking>",//攻击时+500%
+		"Limited to [1] per Civilization"
+		"[+5] Sight <for [All] units>",//增加视野
+		"Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+		"Can pass through impassable tiles",//可以无视地行
+		"Invisible to non-adjacent units", //只有附近的才能看到
+        "Can see invisible [Land] units",//可以看到周围的地面单位
+        "Can enter ice tiles"
+        "[+33] Movement <in [Water] tiles>"
+		"[+5] Sight <for [All] units><in [Water] tiles>",//增加视野
+		]
+	},
+	
+	{
+		"name": "凤王",
+		//
+		"unitType": "飞行系",
+		"movement": 5,
+		"strength": 60,//近战能力=血量
+		"cost": 10000
+		"uniques": [
+		"Cannot be purchased"//无法购买
+		"Never appears as a Barbarian unit"//野人不能造
+		"Unbuildable"
+		"Can move after attacking",//a完可以跑
+		"[+25]% Strength<when attacking>",//攻击时+25%
+		"Limited to [1] per Civilization"
+		"[+2] Sight <for [All] units>",//增加视野
+		"Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+		"Can pass through impassable tiles",//可以无视地行
+        "Can see invisible [Land] units",//可以看到周围的地面单位
+        "Only available <if [遥不可及] is constructed>"
+		]
+	},
+	
+	{
+		"name": "固拉多",
+		//
+		"unitType": "地面系",
+		"movement": 8,
+		"strength": 100,//近战能力=血量
+		"cost": 2500
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"Unbuildable"
+		"Can move after attacking",//a完可以跑
+		"[2] additional attacks per turn", //可以多a一次
+		"[+55]% Strength<when attacking>",//攻击时+25%
+		"Limited to [1] per Civilization"
+		"[+2] Sight <for [All] units>",//增加视野
+		"[-90]% Strength for enemy [Military] units in adjacent [All] tiles"//临近的敌人减少攻击力
+		"Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+		"Can pass through impassable tiles",//可以无视地行
+        "Can see invisible [Land] units",//可以看到周围的地面单位
+		]
+	},
+	
+	{
+		"name": "盖欧卡",
+		//
+		"unitType": "水系-海洋",
+		"movement": 5,
+		"strength": 80,//近战能力=血量
+		"rangedStrength": 100,
+		"cost": 2500
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"Unbuildable"
+		"Can move after attacking",//a完可以跑
+		"[+55]% Strength<when attacking>",//攻击时+25%
+		"Limited to [1] per Civilization"
+		"[3] additional attacks per turn", //可以多a一次
+		"[+3] Range",//射程增加
+		"[+5] Sight <for [All] units>",//增加视野
+		"Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+		"Can pass through impassable tiles",//可以无视地行
+        "Can see invisible [水系-海洋] units",//可以看到周围的地面单位
+		]
+	},
+	
+	{
+		"name": "代欧奇希斯-速度",
+		"unitType": "超能系",
+		"movement": 5,
+		"strength": 60,//近战能力=血量
+		"cost": 100000
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"Unbuildable"
+		"Can move after attacking",//a完可以跑
+		"Limited to [1] per Civilization"
+		"[2] additional attacks per turn", //可以多a一次
+		"[+2] Sight <for [All] units>",//增加视野
+		"Ignores terrain cost",//忽略地形移动成本（一格1移动力）
+		"Can pass through impassable tiles",//可以无视地行
+		"Can transform to [代欧奇希斯-防御]"//消耗x个什么转化为什么单位
+		]
+	},
+	
+	{
+		"name": "代欧奇希斯-防御",
+		"unitType": "超能系",
+		"movement": 2,
+		"strength": 60,//近战能力=血量
+		"cost": 10000
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"Unbuildable"
+		"[+50]% Strength<when defending>",//防守时时+50%
+		"[-50]% Strength for enemy [Military] units in adjacent [All] tiles"//临近的敌人减少攻击力
+		"Limited to [1] per Civilization"
+		"Can transform to [代欧奇希斯-攻击]"//消耗x个什么转化为什么单位
+		]
+	},
+	
+	{
+		"name": "代欧奇希斯-攻击",
+		"unitType": "超能系",
+		"movement": 3,
+		"strength": 90,//近战能力=血量
+		"cost": 10000
+		"uniques": [
+		"Never appears as a Barbarian unit"//野人不能造
+		"Unbuildable"
+		"[+30]% Strength <when attacking>"
+		"[+50]% Strength <vs [Wounded] units>"
+		"Limited to [1] per Civilization"
+		"[+2] Sight <for [All] units>",//增加视野
+		"Can transform to [代欧奇希斯-速度]"//消耗x个什么转化为什么单位
+		]
+	},
+
+  
+
+
+
+
+
+
+/////////////////////////////
+///////伟人//////////
+//////////////////////////////
+{
+	"name": "秋雨喵",
+		"unitType": "Civilian",
+		"uniques": [
+		"Can start an [30]-turn golden age", //可开启x回合黄金时代
+		"Great Person - [Happiness]", //伟人类型
+		"Unbuildable", //不可建造
+		"Uncapturable"//不可捕获
+		"Cannot be purchased"//无法购买
+		"Only available <if [遥不可及] is constructed>"
+		],
+		"movement": 2
+	},
+	
+	{
+		"name": "战斗之人",
+		"replaces": "Great General",//取代大军事家
+		"uniqueTo": "关都联盟",
+		"cost": 1000,
+		"unitType": "Sword",//类型近战
+		"uniques": [
+		"Can start an [8]-turn golden age", 
+		"[+15]% Strength bonus for [Military] units within [5] tiles", 
+		"[+25]% Strength bonus for [Military] units within [5] tiles<when defending>",//防守时周围5格+50%
+		"[+25]% Strength<when attacking>",//攻击时+25%
+		"Can construct [Citadel]",
+			"Great Person - [War]", 
+			"Unbuildable", //无法建造
+			"Uncapturable"//无法捕获
+			],
+		"movement": 4,
+		"strength": 15,//近战能力=血量
+	},
+	
+	{
+		"name": "捕获之人",
+		//"uniqueTo": "关都联盟",
+		"cost": 1000,
+		"unitType": "Sword",//类型近战
+		"uniques": [
+		"[+15]% Strength<when attacking>",//攻击时+25%
+		"May capture killed [Military] units<with [700]% chance>",
+			"Great Person - [War]", 
+			"Unbuildable", //无法建造
+			"Uncapturable"//无法捕获
+			"Cannot be purchased"//无法购买
+			"Only available <if [遥不可及] is constructed>"
+			],
+		"movement": 4,
+		"strength": 15,//近战能力=血量
+	},
+    
+    
+    
+    {
+		"name": "未知图腾 Y",
+		//
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 10,
+		"uniques": ["Can be added to [未知图腾] in the Capital"
+		"Limited to [1] per Civilization"
+		"Uncapturable",
+		"Cannot be purchased",
+		"Only available <if [遥不可及] is constructed>"]
+	},
+	
+	{
+		"name": "未知图腾 O",
+		//
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost":10,
+		"uniques": ["Can be added to [未知图腾] in the Capital"
+		"Limited to [1] per Civilization"
+		"Uncapturable",
+		"Cannot be purchased",
+		"Only available <if [遥不可及] is constructed>"]
+	},
+	
+	{
+		"name": "未知图腾 U",
+		//
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 10,
+		"uniques": ["Can be added to [未知图腾] in the Capital"
+		"Limited to [1] per Civilization"
+		"Uncapturable",
+		"Cannot be purchased",
+		"Only available <if [遥不可及] is constructed>"]
+	},
+	
+	{
+		"name": "未知图腾 W",
+		//
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 10,
+		"uniques": ["Can be added to [未知图腾] in the Capital"
+		"Limited to [1] per Civilization"
+		"Uncapturable",
+		"Cannot be purchased",
+		"Only available <if [遥不可及] is constructed>"]
+	},
+	
+	{
+		"name": "未知图腾 I",
+		//
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 10,
+		"uniques": ["Can be added to [未知图腾] in the Capital"
+		"Limited to [1] per Civilization"
+		"Uncapturable",
+		"Cannot be purchased",
+		"Only available <if [遥不可及] is constructed>"]
+	},
+	
+	{
+		"name": "未知图腾 N",
+		//
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 10,
+		"uniques": ["Can be added to [未知图腾] in the Capital"
+		"Limited to [1] per Civilization"
+		"Uncapturable",
+		"Cannot be purchased",
+		"Only available <if [遥不可及] is constructed>"]
+	},
+	
+	{
+		"name": "未知图腾 ！",
+		//
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 10,
+		"uniques": ["Can be added to [未知图腾] in the Capital"
+		"Limited to [1] per Civilization"
+		"Uncapturable",
+		"Cannot be purchased",
+		"Only available <if [遥不可及] is constructed>"]
+	},
+
+   
+	
+]

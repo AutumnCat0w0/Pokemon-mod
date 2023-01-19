@@ -1,0 +1,380 @@
+[//兵种
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Sword",
+        "movementType": "Land"
+    },
+    {
+        "name": "Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Archery",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land"
+    },
+    {
+        "name": "Mounted",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armored",
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege",
+        "movementType": "Land"
+    },
+    {
+        "name": "Civilian Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Melee Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Ranged Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Submarine",
+        "movementType": "Water",
+        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"]
+    },
+    {
+        "name": "Aircraft Carrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
+    },
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+
+    // Deprecated unit types required for mods without a UnitTypes.json file to work
+
+    {
+        "name": "Melee",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armor",
+        "movementType": "Land"
+    },
+    {
+        "name": "WaterCivilian",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterMelee",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterRanged",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterSubmarine",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterAircraftCarrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "AtomicBomber",
+        "movementType": "Air"
+    },
+    
+    
+    {
+        "name": "一般系",
+        "movementType": "Land"
+        "uniques":["[+150]% Strength <vs [幽灵系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "格斗系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [一般系] units><when attacking>"
+        "[+30]% Strength <vs [岩石系] units><when attacking>"
+        "[+30]% Strength <vs [钢系] units><when attacking>"
+        "[+30]% Strength <vs [冰系] units><when attacking>"
+        "[+30]% Strength <vs [岩石系] units><when defending>"
+        "[+30]% Strength <vs [虫系] units><when defending>"
+        "[+30]% Strength <vs [恶系] units><when defending>"
+        ]
+    },
+    
+    
+    {
+        "name": "飞行系",
+        "movementType": "Land"
+        "uniques":["Can pass through impassable tiles"
+        "[+30]% Strength <vs [格斗系] units><when attacking>"
+        "[+30]% Strength <vs [草系] units><when attacking>"
+        "[+30]% Strength <vs [虫系] units><when attacking>"
+        "[+30]% Strength <vs [格斗系] units><when defending>"
+        "[+30]% Strength <vs [草系] units><when defending>"
+        "[+30]% Strength <vs [虫系] units><when defending>"
+        "[+150]% Strength <vs [地面系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "毒系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [草系] units><when attacking>"
+        "[+30]% Strength <vs [妖精系] units><when attacking>"
+        "[+30]% Strength <vs [格斗系] units><when defending>"
+        "[+30]% Strength <vs [毒系] units><when defending>"
+        "[+30]% Strength <vs [虫系] units><when defending>"
+        "[+30]% Strength <vs [草系] units><when defending>"
+        "[+30]% Strength <vs [妖精系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "地面系",
+        "movementType": "Land"
+       "uniques":[
+        "[+30]% Strength <vs [岩石系] units><when attacking>"
+        "[+30]% Strength <vs [钢系] units><when attacking>"
+        "[+30]% Strength <vs [电系] units><when attacking>"
+        "[+30]% Strength <vs [火系] units><when attacking>"
+        "[+30]% Strength <vs [毒系] units><when defending>"
+        "[+30]% Strength <vs [岩石系] units><when defending>"
+        "[+150]% Strength <vs [电系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "岩石系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [飞行系] units><when attacking>"
+        "[+30]% Strength <vs [虫系] units><when attacking>"
+        "[+30]% Strength <vs [火系] units><when attacking>"
+        "[+30]% Strength <vs [冰系] units><when attacking>"
+        "[+30]% Strength <vs [一般系] units><when defending>"
+        "[+30]% Strength <vs [飞行系] units><when defending>"
+        "[+30]% Strength <vs [毒系] units><when defending>"
+        "[+30]% Strength <vs [火系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "虫系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [草系] units><when attacking>"
+        "[+30]% Strength <vs [超能系] units><when attacking>"
+        "[+30]% Strength <vs [恶系] units><when attacking>"
+        "[+30]% Strength <vs [格斗系] units><when defending>"
+        "[+30]% Strength <vs [地面系] units><when defending>"
+        "[+30]% Strength <vs [草系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "幽灵系",
+        "movementType": "Land"
+        "uniques":["Invisible to others"
+        "Can pass through impassable tiles"
+        "[+30]% Strength <vs [幽灵系] units><when attacking>"
+        "[+30]% Strength <vs [超能系] units><when attacking>"
+        "[+150]% Strength <vs [一般系] units><when defending>"
+        "[+150]% Strength <vs [格斗系] units><when defending>"
+        "[+30]% Strength <vs [毒系] units><when defending>"
+        "[+30]% Strength <vs [虫系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "钢系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [岩石系] units><when attacking>"
+        "[+30]% Strength <vs [冰系] units><when attacking>"
+        "[+30]% Strength <vs [妖精系] units><when attacking>"
+        "[+30]% Strength <vs [一般系] units><when defending>"
+        "[+30]% Strength <vs [飞行系] units><when defending>"
+        "[+150]% Strength <vs [毒系] units><when defending>"
+        "[+30]% Strength <vs [岩石系] units><when defending>"
+        "[+30]% Strength <vs [虫系] units><when defending>"
+        "[+30]% Strength <vs [钢系] units><when defending>"
+        "[+30]% Strength <vs [草系] units><when defending>"
+        "[+30]% Strength <vs [超能系] units><when defending>"
+        "[+30]% Strength <vs [冰系] units><when defending>"
+        "[+30]% Strength <vs [龙系] units><when defending>"
+        "[+30]% Strength <vs [妖精系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "火系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [虫系] units><when attacking>"
+        "[+30]% Strength <vs [钢系] units><when attacking>"
+        "[+30]% Strength <vs [草系] units><when attacking>"
+        "[+30]% Strength <vs [冰系] units><when attacking>"
+        "[+30]% Strength <vs [虫系] units><when defending>"
+        "[+30]% Strength <vs [钢系] units><when defending>"
+        "[+30]% Strength <vs [火系] units><when defending>"
+        "[+30]% Strength <vs [草系] units><when defending>"
+        "[+30]% Strength <vs [冰系] units><when defending>"
+        "[+30]% Strength <vs [妖精系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "水系-陆地",
+        "movementType": "Land"
+        "uniques":[
+        "May attack when embarked"//船运可以攻击（暂时没用）
+        "Eliminates combat penalty for attacking over a river", //消除跨海影响
+        "Eliminates combat penalty for attacking across a coast"//消除跨陆影响
+        "[+30]% Strength <vs [地面系] units><when attacking>"
+        "[+30]% Strength <vs [岩石系] units><when attacking>"
+        "[+30]% Strength <vs [火系] units><when attacking>"
+        "[+30]% Strength <vs [钢系] units><when defending>"
+        "[+30]% Strength <vs [火系] units><when defending>"
+        "[+30]% Strength <vs [水系] units><when defending>"
+        "[+30]% Strength <vs [冰系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "水系-海洋",
+        "movementType": "Water"
+        "uniques":[
+        "Eliminates combat penalty for attacking over a river", //消除跨海影响
+        "Eliminates combat penalty for attacking across a coast"//消除跨陆影响
+        "[+30]% Strength <vs [地面系] units><when attacking>"
+        "[+30]% Strength <vs [岩石系] units><when attacking>"
+        "[+30]% Strength <vs [火系] units><when attacking>"
+        "[+30]% Strength <vs [钢系] units><when defending>"
+        "[+30]% Strength <vs [火系] units><when defending>"
+        "[+30]% Strength <vs [水系] units><when defending>"
+        "[+30]% Strength <vs [冰系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "草系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [地面系] units><when attacking>"
+        "[+30]% Strength <vs [岩石系] units><when attacking>"
+        "[+30]% Strength <vs [水系] units><when attacking>"
+        "[+30]% Strength <vs [地面系] units><when defending>"
+        "[+30]% Strength <vs [水系] units><when defending>"
+        "[+30]% Strength <vs [草系] units><when defending>"
+        "[+30]% Strength <vs [电系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "电系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [飞行系] units><when attacking>"
+        "[+30]% Strength <vs [水系] units><when attacking>"
+        "[+30]% Strength <vs [飞行系] units><when defending>"
+        "[+30]% Strength <vs [钢系] units><when defending>"
+        "[+30]% Strength <vs [电系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "超能系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [格斗系] units><when attacking>"
+        "[+30]% Strength <vs [毒系] units><when attacking>"
+        "[+30]% Strength <vs [格斗系] units><when defending>"
+        "[+30]% Strength <vs [超能系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "冰系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [飞行系] units><when attacking>"
+        "[+30]% Strength <vs [地面系] units><when attacking>"
+        "[+30]% Strength <vs [草系] units><when attacking>"
+        "[+30]% Strength <vs [龙系] units><when attacking>"
+        "[+30]% Strength <vs [冰系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "龙系",
+        "movementType": "Land"
+        "uniques":[
+        "Eliminates combat penalty for attacking over a river", //消除跨海影响
+        "Eliminates combat penalty for attacking across a coast"//消除跨陆影响
+        "[+30]% Strength <vs [龙系] units><when attacking>"
+        "[+30]% Strength <vs [火系] units><when defending>"
+        "[+30]% Strength <vs [水系] units><when defending>"
+        "[+30]% Strength <vs [草系] units><when defending>"
+        "[+30]% Strength <vs [电系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "恶系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [幽灵系] units><when attacking>"
+        "[+30]% Strength <vs [超能系] units><when attacking>"
+        "[+30]% Strength <vs [幽灵系] units><when defending>"
+        "[+30]% Strength <vs [恶系] units><when defending>"
+        ]
+    },
+    
+    {
+        "name": "妖精系",
+        "movementType": "Land"
+        "uniques":["[+30]% Strength <vs [格斗系] units><when attacking>"
+        "[+30]% Strength <vs [龙系] units><when attacking>"
+        "[+30]% Strength <vs [恶系] units><when attacking>"
+        "[+30]% Strength <vs [格斗系] units><when defending>"
+        "[+30]% Strength <vs [虫系] units><when defending>"
+        "[+150]% Strength <vs [龙系] units><when defending>"
+        "[+30]% Strength <vs [恶系] units><when defending>"
+        ]
+    },
+    
+    
+    
+]
