@@ -74,7 +74,7 @@
 			"[+10]% Strength <in [Land] tiles><when defending>",
 			"[+10]% Strength <in [Desert] tiles><when defending>",
 			"[+10]% Strength <in [Land] tiles>",
-			"[+10]% Strength <in [Desert] tiles>",
+			"[+5]% Strength <in [Desert] tiles>",
 			"[+1 Food] from [Desert] tiles without [Flood plains] [in capital]",
 			"[+1 Production] from [Desert] tiles without [Flood plains] [in this city]",
 			"[+1 Gold] from [Land] tiles without [Flood plains] [in this city]"
@@ -234,8 +234,8 @@
 		"[100] Unit Supply"//单位补给
 		"Enemy [All] units must spend [1] extra movement points when inside your territory"//敌人在城市额外移动
 		"Enemy [Wounded] units must spend [20] extra movement points when inside your territory"
-		"[-1 Food] from [All] tiles [in all cities]",
-			"[-1 Production] from [All] tiles [in all cities]",
+		//"[-1 Food] from [All] tiles [in all cities]",
+			//"[-1 Production] from [All] tiles [in all cities]",
 			"[-1 Gold] from [All] tiles [in all cities]"
 		"[-1 Food] from [Land] tiles [in all cities]<before the [Classical era]>",
 			"[-1 Production] from [Land] tiles [in all cities]<before the [Classical era]>",
@@ -248,7 +248,7 @@
 		"[+30]% Strength for cities<before the [Medieval era]>"
 		"[+30]% Strength for cities<before the [Renaissance era]>"
 		"May buy [龙之开拓者] units for [500] [Faith] [in all cities] at an increasing price ([500])"
-		"May buy [龙神柱] units for [100] [Faith] [in all cities] at an increasing price ([150])"
+		"May buy [护城龙] units for [100] [Faith] [in all cities] at an increasing price ([150])"
 		"May buy [Sword] units with [Faith] for [3] times their normal Production cost"
 			],//文明特性具体效果
 			"cities": ["流星之里","流星瀑布",]//城市名，可无限写下去，中间逗号连接*
@@ -427,14 +427,14 @@
 			"outerColor": [5, 182, 64],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueText": "你的大商人将为你带来双倍金钱。每当伟人被消耗时，你获得一定的科技点数。专业人员不再消耗食物。若在建造首都已有的建筑，产能则会提升。"
+			"uniqueText": "你的大商人将为你带来双倍金钱。每当伟人被消耗时，你获得一定的科技点数。专业人员不再消耗食物。若在建造首都已有的建筑，你的产能会降低。"
 			"uniqueName": "以太财团",//文明特性名
 			"uniques": [
 			
 			
 			"[+100]% Gold from Great Merchant trade missions"//增加大商人赚的钱
 			"Receive a tech boost when scientific buildings/wonders are built in capital"//建造科技建筑时获得加成
-			"[+20]% Production towards any buildings that already exist in the Capital"//首都已经建过的建筑+产能。
+			"[-10]% Production towards any buildings that already exist in the Capital"//首都已经建过的建筑+-产能。
 			"[-100]% Food consumption by specialists [in all cities]"
 			"[+50 Science] whenever a Great Person is expended"
 			],//文明特性具体效果
@@ -576,20 +576,79 @@
 	
 	
 	//////////宝可梦城邦//////
-	{
+{
 		"name": "护林员协会",
 		"adjective": ["护林员"],
-		"cityStateType": "Militaristic",
-
-		"declaringWar": "你的恶行必须受到制裁！",
-		"attacked": "Very well, this shall not be forgotten.",
-		"defeated": "即使我败了，我也不会让你伤害宝可梦的...",
-		"outerColor": [0, 0, 0],
-		"innerColor": [133,205,151],
+		"startBias": ["Forest"],//初始位置倾向（可删
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "你的恶行必须受到制裁！",//主动宣战
+		"attacked": "我们不会畏惧任何挑战。",//被玩家宣战
+		"defeated": "即使我败了，我也不会让你伤害宝可梦的...",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [133,205,151],//内部颜色
 		"uniques": ["[+1 Production] from every [Jungle]"
 	    	"[+1 Production] from every [Forest]"
-			]
-		"cities": ["护林员协会"]
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["护林员协会"]//城市名字
+	},
+	
+	{
+		"name": "盖亚那",
+		"adjective": ["盖亚那"],
+		"startBias": ["Coast"],//初始位置倾向（可删
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "我本意和平，但我别无选择。",//主动宣战
+		"attacked": "奥，这真是个糟糕的消息……",//被玩家宣战
+		"defeated": "让我的一切成为历史的尘埃吧……",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [51,161,201],//内部颜色
+		"uniques": ["[+1 Food] from every [Coast]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["盖亚那"]//城市名字
+	},
+	
+		{
+		"name": "合能",
+		"adjective": ["合能地区"],
+		"cityStateType": "Mercantile",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "来见识见识δ‐DELTA类宝可梦吧（或许以后我会专门写出来）",//主动宣战
+		"attacked": "你做了一个糟糕的选择，很快你就会知道后果。",//被玩家宣战
+		"defeated": "强大的钢铁也无法抵挡吗……我败了。",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [128,138,135],//内部颜色
+		"uniques": ["[+9 Production] from every [Iron]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["合能市"]//城市名字
+	},
+	
+			{
+		"name": "宝可乌托邦",
+		"adjective": ["宝可乌托邦"],
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "就让你领教一下宝可梦对战的魅力！",//主动宣战
+		"attacked": "呼哈哈哈，来对战吧！",//被玩家宣战
+		"defeated": "愿赌服输。",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [255,153,18],//内部颜色
+		"uniques": ["[+25]% Strength"
+			"[+1] Movement"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["宝可乌托邦"]//城市名字
+	},
+	
+				{
+		"name": "亿奥斯岛",
+		"adjective": ["宝可梦大集结"],
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "很抱歉，我必须得这么做。",//主动宣战
+		"attacked": "希望你只是为了收集能量……",//被玩家宣战
+		"defeated": "为什么会变成这样呢……",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [155,105,156],//内部颜色
+		"uniques": ["[+25]% Strength"
+			"[+1] Movement"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["吉弗市","奥拉公园","玛尔竞技场","黎莫竞技场","媞亚苍空遗迹",]//城市名字
 	},
 	
 	

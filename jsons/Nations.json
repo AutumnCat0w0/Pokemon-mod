@@ -33,8 +33,8 @@
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
 			"uniqueName": "宝界规矩",//文明特性名
-			"uniqueText": "众所周知，宝可梦的零花钱和经验来源都是敌人，去掠夺他们吧（bushi）。你每次与敌人作战，都会使文明学到更多，并且，你的同盟在你作战时能更快的帮助你。"
-			"uniques": [
+			//"uniqueText": "众所周知，宝可梦的零花钱和经验来源都是敌人，去掠夺他们吧（bushi）。你每次与敌人作战，都会使文明学到更多，并且，你的同盟在你作战时能更快的帮助你。"
+			"uniques": ["众所周知，宝可梦的零花钱和经验来源都是敌人，去掠夺他们吧（bushi）。你每次与敌人作战，都会使文明学到更多，并且，你的同盟在你作战时能更快的帮助你。"
 			"Earn [33]% of killed [Military] unit's [Cost] as [Gold]",//杀人拿一半产能的钱
 			"Earn [5]% of the damage done to [Military] units as [Science] <before the [Medieval era]>"//打人科技
 			"Earn [15]% of the damage done to [Military] units as [Culture] <before the [Medieval era]>"//打人文化
@@ -66,14 +66,14 @@
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
 			"uniqueName": "大地的坂木",//文明特性名
-			"uniqueText": "掌握了大地的奥义，在大地之上会变得更强。"
-			"uniques": [
+			//"uniqueText": "掌握了大地的奥义，在大地之上会变得更强。"
+			"uniques": ["掌握了大地的奥义，在大地之上会变得更强。"
 			"Earn [33]% of killed [Military] unit's [Cost] as [Gold]",//杀人拿一半产能的钱
 			
 			
 			"[+10]% Strength <in [Land] tiles><when defending>",
 			"[+10]% Strength <in [Desert] tiles><when defending>",
-			"[+10]% Strength <in [Land] tiles>",
+			"[+5]% Strength <in [Land] tiles>",
 			"[+5]% Strength <in [Desert] tiles>",
 			"[+1 Food] from [Desert] tiles without [Flood plains] [in capital]",
 			"[+1 Production] from [Desert] tiles without [Flood plains] [in this city]",
@@ -104,9 +104,9 @@
 			"outerColor": [135, 206, 235],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueText": "协调训练家的顶点，每一个海洋或海滨地块都会提供文化或快乐。组建水属性单位时提升速度。"
+			//"uniqueText": "协调训练家的顶点，每一个海洋或海滨地块都会提供文化或快乐。组建水属性单位时提升速度。"
 			"uniqueName": "水幻琉璃",//文明特性名
-			"uniques": [
+			"uniques": ["协调训练家的顶点，每一个海洋或海滨地块都会提供文化或快乐。组建水属性单位时提升速度。"
 			
 			
 			"Each city founded increases culture cost of policies [200]% less than normal"
@@ -142,9 +142,9 @@
 			"outerColor": [0, 69, 107],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueText": "你可以通过靛蓝色宝珠召唤盖欧卡。你的水上地块获得额外资源，但减少你在陆上获取的资源。你的单位可以船运与航海。"
+			//"uniqueText": "你可以通过靛蓝色宝珠召唤盖欧卡。你的水上地块获得额外资源，但减少你在陆上获取的资源。你的单位可以船运与航海。"
 			"uniqueName": "巨浪潮流！",//文明特性名
-			"uniques": [
+			"uniques": ["你可以通过靛蓝色宝珠召唤盖欧卡。你的水上地块获得额外资源，但减少你在陆上获取的资源。你的单位可以船运与航海。"
 			
 		    "May buy [靛蓝色宝珠] buildings with [Faith] for [1] times their normal Production cost"
 		    "Enables embarkation for land units <starting from the [Ancient era]>", //为陆地启用登船
@@ -164,7 +164,7 @@
 	},
 	
 	{
-			"name": "熔岩队",
+			"name": "熔岩团",
 			"leaderName": "赤焰松",
 			"adjective": ["pokemon"],
 		//"startBias": ["Coast"],//起始偏好
@@ -182,9 +182,9 @@
 			"outerColor": [255, 0, 0],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueText": "你可以通过朱红色宝珠召唤固拉多。你的陆地地块获得额外资源，但减少你在水上获取的资源，并且你的单位在。"
+			//"uniqueText": "你可以通过朱红色宝珠召唤固拉多。你的陆地地块获得额外资源，但减少你在水上获取的资源，并且你的单位能够船运的时代推迟。"
 			"uniqueName": "大地之子",//文明特性名
-			"uniques": [
+			"uniques": ["你可以通过朱红色宝珠召唤固拉多。你的陆地地块获得额外资源，但减少你在水上获取的资源，并且你的单位能够船运的时代推迟。"
 			
 			
 		    "May buy [朱红色宝珠] buildings with [Faith] for [1] times their normal Production cost"
@@ -220,9 +220,9 @@
 			"outerColor": [155, 32, 64],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueName": "守护之愿",//文明特性名
-			"uniqueText": "你可以获得拥有龙神力量的龙之神柱的庇护。你的陆地地块产出大幅度减少。若你击杀了单位，能获得不同程度的资源。"
-			"uniques": [
+			"uniqueName": "守护之龙",//文明特性名
+			//"uniqueText": "你可以获得拥有龙神力量的龙之神柱的庇护。你的陆地地块产出大幅度减少。若你击杀了单位，能获得不同程度的资源。"
+			"uniques": ["你可以获得拥有龙神力量的龙之神柱的庇护。你的陆地地块产出大幅度减少。若你击杀了单位，能获得不同程度的资源。"
 			"Earn [100]% of killed [Military] unit's [Cost] as [Gold]",//杀人拿一半产能的钱
 			"Earn [40]% of killed [Military] unit's [Cost] as [Faith]",//杀人拿一半产能的钱
 			"Earn [10]% of killed [Military] unit's [Cost] as [Culture]",//杀人拿一半产能的钱
@@ -234,8 +234,8 @@
 		"[100] Unit Supply"//单位补给
 		"Enemy [All] units must spend [1] extra movement points when inside your territory"//敌人在城市额外移动
 		"Enemy [Wounded] units must spend [20] extra movement points when inside your territory"
-		"[-1 Food] from [All] tiles [in all cities]",
-			"[-1 Production] from [All] tiles [in all cities]",
+		//"[-1 Food] from [All] tiles [in all cities]",
+			//"[-1 Production] from [All] tiles [in all cities]",
 			"[-1 Gold] from [All] tiles [in all cities]"
 		"[-1 Food] from [Land] tiles [in all cities]<before the [Classical era]>",
 			"[-1 Production] from [Land] tiles [in all cities]<before the [Classical era]>",
@@ -273,9 +273,9 @@
 			"outerColor": [105, 105, 105],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueText": "你的矿井与采石场提供额外的产能与金钱。你初始获得[采矿]与[奇石发掘]科技。"
+			//"uniqueText": "你的矿井与采石场提供额外的产能与金钱。你初始获得[采矿]与[奇石发掘]科技。"
 			"uniqueName": "石头鉴赏家",//文明特性名
-			"uniques": [
+			"uniques": ["你的矿井与采石场提供额外的产能与金钱。你初始获得[采矿]与[奇石发掘]科技。"
 		//"[+2 Culture] [in capital]",
 			//"[+5 Production] [in capital]"
 			
@@ -315,9 +315,9 @@
 			"outerColor": [135, 86, 25],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueText": "你可以额外获得一个任意宗教加成与强化者加成，并且在冻土地块+2信仰。"
+			//"uniqueText": "你可以额外获得一个任意宗教加成与强化者加成，并且在冻土地块+2信仰。"
 			"uniqueName": "神话研究",//文明特性名
-			"uniques": [
+			"uniques": ["你可以额外获得一个任意宗教加成与强化者加成，并且在冻土地块+2信仰。"
 			
 			
 		    "May choose [1] additional belief(s) of any type when [founding] a religion",
@@ -427,14 +427,14 @@
 			"outerColor": [5, 182, 64],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueText": "你的大商人将为你带来双倍金钱。每当伟人被消耗时，你获得一定的科技点数。专业人员不再消耗食物。若在建造首都已有的建筑，产能则会提升。"
+			//"uniqueText": "你的大商人将为你带来双倍金钱。每当伟人被消耗时，你获得一定的科技点数。专业人员不再消耗食物。若在建造首都已有的建筑，你的产能会降低。"
 			"uniqueName": "以太财团",//文明特性名
-			"uniques": [
+			"uniques": ["你的大商人将为你带来双倍金钱。每当伟人被消耗时，你获得一定的科技点数。专业人员不再消耗食物。若在建造首都已有的建筑，你的产能会降低。"
 			
 			
 			"[+100]% Gold from Great Merchant trade missions"//增加大商人赚的钱
 			"Receive a tech boost when scientific buildings/wonders are built in capital"//建造科技建筑时获得加成
-			"[+20]% Production towards any buildings that already exist in the Capital"//首都已经建过的建筑+产能。
+			"[-10]% Production towards any buildings that already exist in the Capital"//首都已经建过的建筑+-产能。
 			"[-100]% Food consumption by specialists [in all cities]"
 			"[+50 Science] whenever a Great Person is expended"
 			],//文明特性具体效果
@@ -462,9 +462,9 @@
 			"outerColor": [95, 165, 25],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			"uniqueText": "你不处于战争时，产能粮食金钱会增加，组件军事单位的速度与军队战斗力都会大大减少。处于战争时，你的军事力量会变强，组建军事单位的速度也会大大增加，但会减少产能并且有大概率使粮食产出消失。"
+			//"uniqueText": "你不处于战争时，产能粮食金钱会增加，组件军事单位的速度与军队战斗力都会大大减少。处于战争时，你的军事力量会变强，组建军事单位的速度也会大大增加，但会减少产能并且有大概率使粮食产出消失。"
 			"uniqueName": "混元极意",//文明特性名
-			"uniques": [
+			"uniques": ["你不处于战争时，产能粮食金钱会增加，组件军事单位的速度与军队战斗力都会大大减少。处于战争时，你的军事力量会变强，组建军事单位的速度也会大大增加，但会减少产能并且有大概率使粮食产出消失。"
 			
 			
 			//非战
@@ -506,7 +506,7 @@
 	
 
 	
-	{
+	/*{
 			"name": "彩虹火箭队",
 			"leaderName": "坂木",
 			"adjective": ["pokemon"],
@@ -536,7 +536,7 @@
 			],//文明特性具体效果
 			"cities": ["空",]
 			
-	},
+	},*/
 	
 	
 	
@@ -576,6 +576,83 @@
 	
 	
 	//////////宝可梦城邦//////
+{
+		"name": "护林员协会",
+		"adjective": ["护林员"],
+		"startBias": ["Forest"],//初始位置倾向（可删
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "你的恶行必须受到制裁！",//主动宣战
+		"attacked": "我们不会畏惧任何挑战。",//被玩家宣战
+		"defeated": "即使我败了，我也不会让你伤害宝可梦的...",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [133,205,151],//内部颜色
+		"uniques": ["[+1 Production] from every [Jungle]"
+	    	"[+1 Production] from every [Forest]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["护林员协会"]//城市名字
+	},
+	
+	{
+		"name": "盖亚那",
+		"adjective": ["盖亚那"],
+		"startBias": ["Coast"],//初始位置倾向（可删
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "我本意和平，但我别无选择。",//主动宣战
+		"attacked": "奥，这真是个糟糕的消息……",//被玩家宣战
+		"defeated": "让我的一切成为历史的尘埃吧……",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [51,161,201],//内部颜色
+		"uniques": ["[+1 Food] from every [Coast]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["盖亚那"]//城市名字
+	},
+	
+		{
+		"name": "合能",
+		"adjective": ["合能地区"],
+		"cityStateType": "Mercantile",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "来见识见识δ‐DELTA类宝可梦吧（或许以后我会专门写出来）",//主动宣战
+		"attacked": "你做了一个糟糕的选择，很快你就会知道后果。",//被玩家宣战
+		"defeated": "强大的钢铁也无法抵挡吗……我败了。",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [128,138,135],//内部颜色
+		"uniques": ["[+9 Production] from every [Iron]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["合能市"]//城市名字
+	},
+	
+			{
+		"name": "宝可乌托邦",
+		"adjective": ["宝可乌托邦"],
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "就让你领教一下宝可梦对战的魅力！",//主动宣战
+		"attacked": "呼哈哈哈，来对战吧！",//被玩家宣战
+		"defeated": "愿赌服输。",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [255,153,18],//内部颜色
+		"uniques": ["[+25]% Strength"
+			"[+1] Movement"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["宝可乌托邦"]//城市名字
+	},
+	
+				{
+		"name": "亿奥斯岛",
+		"adjective": ["宝可梦大集结"],
+		"cityStateType": "Militaristic",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "很抱歉，我必须得这么做。",//主动宣战
+		"attacked": "希望你只是为了收集能量……",//被玩家宣战
+		"defeated": "为什么会变成这样呢……",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [155,105,156],//内部颜色
+		"uniques": ["[+25]% Strength"
+			"[+1] Movement"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["吉弗市","奥拉公园","玛尔竞技场","黎莫竞技场","媞亚苍空遗迹",]//城市名字
+	},
+	
+	
+	// City-States sorted by cityStateType, name
 	{
 		"name": "护林员协会",
 		"adjective": ["护林员"],
@@ -651,8 +728,35 @@
 		"cities": ["吉弗市","奥拉公园","玛尔竞技场","黎莫竞技场","媞亚苍空遗迹",]//城市名字
 	},
 	
-	// City-States sorted by cityStateType, name
+		{
+		"name": "奥多马雷",
+		"adjective": ["奥多马雷"],
+		"startBias": ["Coast"],//初始位置倾向（可删
+		"cityStateType": "Cultured",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "这是大势。",//主动宣战
+		"attacked": "水都的守护神会庇护我们。",//被玩家宣战
+		"defeated": "水之都……破灭了……",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [135,206,235],//内部颜色
+		"uniques": ["[+2 Culture] from every [Coast]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["奥多马雷"]//城市名字
+	},
 	
+			{
+		"name": "风来城",
+		"adjective": ["风来城"],
+		"startBias": ["Coast"],//初始位置倾向（可删
+		"cityStateType": "Cultured",//倾向。Militaristic：军事，Cultured：文化，Maritime：航海（食物，Religious：宗教，Mercantile：商业（奢侈）
+		"declaringWar": "这是大势。",//主动宣战
+		"attacked": "水都的守护神会庇护我们。",//被玩家宣战
+		"defeated": "水之都……破灭了……",//寄
+		"outerColor": [0, 0, 0],//外部颜色
+		"innerColor": [135,206,235],//内部颜色
+		"uniques": ["[+2 Culture] from every [Coast]"
+			]//国家特性（可以不写，直接删掉就行
+		"cities": ["风来城"]//城市名字
+	},
 
 
 

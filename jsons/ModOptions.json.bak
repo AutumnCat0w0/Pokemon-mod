@@ -19,5 +19,5 @@ ancientRuinCountMultiplier:0.04,//盲盒计数器（默认0.02）
 
     "isBaseRuleset": true,//是否为规则集
     "author":"Autumn Rain Cat"
-    "nationsToRemove":["彩虹火箭队"]
+    "nationsToRemove":["彩虹火箭队","马师傅武馆"]
 }
