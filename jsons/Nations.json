@@ -111,7 +111,7 @@
 			
 			"Each city founded increases culture cost of policies [200]% less than normal"
 			"[+1 Culture] [in capital]",
-			"[+5 Production] [in capital]",
+			//"[+5 Production] [in capital]",
 			"[+1 Culture] [in all cities]",
 			"[+1 Food] from [Water] tiles [in capital]",
 			"[+1 Culture] from [Water] tiles [in capital]",
