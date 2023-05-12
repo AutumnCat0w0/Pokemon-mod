@@ -104,14 +104,14 @@
 			"outerColor": [135, 206, 235],//文明内部色*
 			"innerColor": [255,255,255],//文明外部色*
 			"favouredReligion": "Pokemon",//当作为ai时选择的宗教
-			//"uniqueText": "协调训练家的顶点，每一个海洋或海滨地块都会提供文化或快乐。组建水属性单位时提升速度。"
+			"uniqueText": "协调训练家的顶点，每一个海洋或海滨地块都会提供文化或快乐。组建水属性单位时提升速度。"
 			"uniqueName": "水幻琉璃",//文明特性名
 			"uniques": ["协调训练家的顶点，每一个海洋或海滨地块都会提供文化或快乐。组建水属性单位时提升速度。"
 			
 			
 			"Each city founded increases culture cost of policies [200]% less than normal"
 			"[+1 Culture] [in capital]",
-			//"[+5 Production] [in capital]",
+			"[+50 Production] [in capital]",
 			"[+1 Culture] [in all cities]",
 			"[+1 Food] from [Water] tiles [in capital]",
 			"[+1 Culture] from [Water] tiles [in capital]",
